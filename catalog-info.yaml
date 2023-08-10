@@ -12,6 +12,10 @@ metadata:
     - monitoring
     - opensource
     - os
+  links:
+    - url: https://openo11y.dev
+      title: Open O11y Website
+      icon: web
 spec:
   type: docs
   lifecycle: experimental
