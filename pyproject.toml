@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "openo11y.dev"
+version = "0.1.0"
+description = "Openly Enabling O11y Everywhere"
+authors = ["Adriel Perkins <adrielp@liatrio.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+mkdocs = "^1.5.2"
+mkdocs-material = "^9.1.21"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

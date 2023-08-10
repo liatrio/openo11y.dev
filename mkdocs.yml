@@ -1,0 +1,24 @@
+site_name: 'Open O11y'
+
+theme:
+  name: material
+  custom_dir: docs/overrides
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - footnotes
+
+extra_css:
+  - "styles/extra.css"
+
+nav:
+  - 'Welcome to Open O11y': 'index.md'
+  - 'Guidance':     
+    - 'Overview': './guidance.md'
+    - 'Leading Delivery Metrics': './delivery-metrics.md'
+    - 'Measuring Joy': './joy-metrics.md'
+  - 'Contributing': './contributing.md'

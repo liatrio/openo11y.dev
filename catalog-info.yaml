@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: openo11y.dev
+  description: Openly Enabling O11y Everywhere
+  annotations:
+    github.com/project-slug: 'liatrio/openo11y.io'
+    backstage.io/techdocs-ref: dir:.
+  tags:
+    - o11y
+    - observability
+    - monitoring
+    - opensource
+    - os
+spec:
+  type: docs
+  lifecycle: experimental
+  owner: o11y-owners
+  system: o11y
