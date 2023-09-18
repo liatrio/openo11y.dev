@@ -3,7 +3,7 @@
 Welcome to Open O11y! This repository hosts the website files for [openo11y.dev](https://openo11y.dev),
 an open-source public website with guidance and information on O11y.
 
-If you're looking to contribute, please see the [contributing](./CONTRIBUTING.md) documentation.
+If you're looking to contribute, please see the [contributing](./docs/contributing.md) documentation.
 
 # Local Development
 
