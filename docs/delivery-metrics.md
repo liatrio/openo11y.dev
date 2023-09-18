@@ -52,25 +52,11 @@ You have 8 H1 headings. You may want to use the "H1 -> H2" option to demote all 
 
 
 ![alt_text](images/image2.png "image_tooltip")
-
-
-
-
-
-<table>
-  <tr>
-   <td><strong>Team Effectiveness and Productivity Metrics</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>August 2023
-   </td>
-  </tr>
-</table>
 -->
 
+# Team Effectiveness and Productivity Metrics
 
-#### Our recommendation is to collect the following metrics for team effectiveness & productivity. 
+#### <span class="highlight-bg"> Our recommendation is to collect the following metrics for team effectiveness & productivity.</span> 
 
 **Delivery Metrics (Product & Squad level)**
 
@@ -95,16 +81,15 @@ You have 8 H1 headings. You may want to use the "H1 -> H2" option to demote all 
 
 <table>
   <tr>
-   <td>
-Theme
+   <td class="highlight-hdr">Theme
    </td>
-   <td>Metrics
+   <td class="highlight-hdr">Metrics
    </td>
-   <td>Focus Relentlessly 
+   <td class="highlight-hdr">Focus Relentlessly 
    </td>
-   <td>Excel Technically 
+   <td class="highlight-hdr">Excel Technically 
    </td>
-   <td>High Performing Team
+   <td class="highlight-hdr">High Performing Team
    </td>
   </tr>
   <tr>
@@ -114,11 +99,11 @@ Theme
    </td>
    <td>Lead Time
    </td>
-   <td>✔️
+   <td class="highlight-cell">✔️
    </td>
-   <td>✔️
+   <td class="highlight-cell">✔️
    </td>
-   <td>✔️
+   <td class="highlight-cell">✔️
    </td>
   </tr>
   <tr>
@@ -126,9 +111,9 @@ Theme
    </td>
    <td>
    </td>
-   <td>✔️
+   <td class="highlight-cell">✔️
    </td>
-   <td>✔️
+   <td class="highlight-cell">✔️
    </td>
   </tr>
   <tr>
@@ -136,9 +121,9 @@ Theme
    </td>
    <td>
    </td>
-   <td>✔️
+   <td class="highlight-cell">✔️
    </td>
-   <td>✔️
+   <td class="highlight-cell">✔️
    </td>
   </tr>
   <tr>
@@ -146,9 +131,9 @@ Theme
    </td>
    <td>
    </td>
-   <td>✔️
+   <td class="highlight-cell">✔️
    </td>
-   <td>✔️
+   <td class="highlight-cell">✔️
    </td>
   </tr>
   <tr>
@@ -160,9 +145,9 @@ Theme
    </td>
    <td>
    </td>
-   <td>✔️
+   <td class="highlight-cell">✔️
    </td>
-   <td>✔️
+   <td class="highlight-cell">✔️
    </td>
   </tr>
   <tr>
@@ -170,9 +155,9 @@ Theme
    </td>
    <td>
    </td>
-   <td>✔️
+   <td class="highlight-cell">✔️
    </td>
-   <td>✔️
+   <td class="highlight-cell">✔️
    </td>
   </tr>
   <tr>
@@ -180,9 +165,9 @@ Theme
    </td>
    <td>
    </td>
-   <td>✔️
+   <td class="highlight-cell">✔️
    </td>
-   <td>✔️
+   <td class="highlight-cell">✔️
    </td>
   </tr>
   <tr>
@@ -192,7 +177,7 @@ Theme
    </td>
    <td>
    </td>
-   <td>✔️
+   <td class="highlight-cell">✔️
    </td>
   </tr>
   <tr>
@@ -200,17 +185,19 @@ Theme
    </td>
    <td>Business OKRs defined & measurable
    </td>
-   <td>✔️
+   <td class="highlight-cell">✔️
    </td>
    <td>
    </td>
-   <td>✔️
+   <td class="highlight-cell">✔️
    </td>
   </tr>
 </table>
 
+_Currently **Change Failure Rate** is not measurable both at Product or Squad level in AA_
 
-_* Currently **Change Failure Rate** is not measurable both at Product or Squad level in AA_
+
+#
 
 
 # Performance Pulse Check
@@ -218,13 +205,13 @@ _* Currently **Change Failure Rate** is not measurable both at Product or Squad 
 
 <table>
   <tr>
-   <td>Metrics
+   <td class="highlight-hdr">Metrics
    </td>
-   <td><span style="text-decoration:underline;">Run </span>
+   <td class="highlight-hdr"><span style="text-decoration:underline;">Run </span>
    </td>
-   <td><span style="text-decoration:underline;">Walk </span>
+   <td class="highlight-hdr"><span style="text-decoration:underline;">Walk </span>
    </td>
-   <td><span style="text-decoration:underline;">Crawl</span>
+   <td class="highlight-hdr"><span style="text-decoration:underline;">Crawl</span>
    </td>
   </tr>
   <tr>
@@ -352,42 +339,41 @@ six months
 </table>
 
 
-
 # 
 
 
-# Why Metrics Matter 
+## Why Metrics Matter 
 
 
-### Quantifiable Performance 
+#### Quantifiable Performance
 
 
 
 * Metrics provide objective measurements of squad performance, fostering a data-driven culture. They enable squads to track progress, set benchmarks, and identify areas for improvement. 
 
 
-### Continuous Improvement 
+#### Continuous Improvement
 
 
 
 * By identifying bottlenecks and inefficiencies, metrics drive continuous improvement efforts. Squads can refine processes, optimize workflows, and enhance collaboration to accelerate delivery. 
 
 
-### Risk Mitigation 
+#### Risk Mitigation
 
 
 
 * Lower change failure rates and shorter Minutes of Impact indicate increased software stability and reliability. This minimizes business risks associated with service disruptions and costly downtimes. 
 
 
-### Informed Decision-Making 
+#### Informed Decision-Making
 
 
 
 * Metrics facilitate informed decision-making by offering a comprehensive view of the software delivery pipeline. Squads can make strategic choices to align with business goals. 
 
 
-### Cross-Functional Collaboration 
+#### Cross-Functional Collaboration
 
 
 
@@ -399,10 +385,10 @@ Software powers innovation and competitive advantage and metrics have emerged as
 # 
 
 
-# Delivery Metrics  (Product & Squad level)
+## Delivery Metrics  (Product & Squad level)
 
 
-## Lead Time 
+### **Lead Time**
 
 Measures the time it takes for a code change to go from commit (branch or main) to production. Provides insights into workflow efficiency and bottlenecks. Shorter lead times indicate smoother processes and quicker value delivery. 
 
@@ -412,7 +398,7 @@ Measures the time it takes for a code change to go from commit (branch or main) 
 * _Example: _Squad’s lead time is 509.15h (~64 days). Working time is 163.85h (~20 days)
 
 
-## Deploy Frequency 
+### **Deploy Frequency**
 
 Measures how often code is deployed. Enables rapid iteration and faster time-to-market. Encourages small, incremental changes, reducing the risk of failures. 
 
@@ -422,7 +408,7 @@ Measures how often code is deployed. Enables rapid iteration and faster time-to-
 * _Example:_ If a squad deployed code 10 times in a month with 31 days, the deployment frequency would be 10/31 = 0.32 deployments per day
 
 
-## Change Failure Rate 
+### **Change Failure Rate**
 
 Gauges the percentage of deployments that result in failures. Offers visibility into code quality and stability. Low failure rates signify robust testing and higher software reliability. 
 
@@ -432,7 +418,7 @@ Gauges the percentage of deployments that result in failures. Offers visibility 
 * _Example:_ If your squad deployed five times this week and one of them resulted in a failure, your change failure rate is 20%
 
 
-## Minutes of Impact (MoI)
+### **Minutes of Impact (MoI)**
 
 Calculates the down time from a service disruption over set time. Highlights the squad’s ability to detect and resolve issues swiftly. Shorter MoI reflects strong incident response and system resilience.
 
@@ -442,10 +428,10 @@ Calculates the down time from a service disruption over set time. Highlights the
 * _Example: _If your squad had four incidents in a 40-hour workweek and spent one total hour on them (from alert to fix), your MoI for that week would be 15 minutes
 
 
-# Engineering Metrics (Squad level)
+## Engineering Metrics (Squad level)
 
 
-## Branch & PR Age 
+### **Branch & PR Age** 
 
 Evaluates development best practices on repos.
 
@@ -455,7 +441,7 @@ Evaluates development best practices on repos.
 * _Example: _Number of commits a branch is behind or ahead of main. Hours or days a PR has existed before merging into main.  
 
 
-## Code Coverage
+### **Code Coverage**
 
 Provides percent of unit testing covering the lines of code. Assesses the test performance.
 
@@ -465,7 +451,7 @@ Provides percent of unit testing covering the lines of code. Assesses the test p
 * _Example: _If the code were testing has a 100 lines of code and the number of lines of code that is actually validated in the same software is 50, then the code coverage percentage of this software will be 50%
 
 
-## Code Quality
+### **Code Quality**
 
 Assesses high or low quality of code as well as security related defects. Identifies potential risks of compromising code and indicated where to fix software defects
 
@@ -475,7 +461,7 @@ Assesses high or low quality of code as well as security related defects. Identi
 * _Example: _1 aspect of code quality is reusability. This is best measured by counting the number of interdependencies. The more there are, generally the less reusable the code. 
 
 
-## Joy Index 
+### **Joy Index**
 
 Benchmarks individual developer experience, satisfaction, and happiness.
 
@@ -488,10 +474,10 @@ Benchmarks individual developer experience, satisfaction, and happiness.
 # 
 
 
-# Product Metrics (Product level)
+## Product Metrics (Product level)
 
 
-## Business OKRs defined & measurable
+### **Business OKRs defined & measurable**
 
 OKRs are defined, with clear and inspiring Objectives that align with the company's overall mission and vision. Key Results are specific, measurable, and quantifiable, providing a clear path towards achieving the Objectives. OKRs are regularly reviewed and updated as needed, with a strong commitment to achieving them.
 

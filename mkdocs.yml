@@ -14,6 +14,7 @@ markdown_extensions:
 
 extra_css:
   - "styles/extra.css"
+  - "styles/table.css"
 
 nav:
   - 'Welcome to Open O11y': 'index.md'
