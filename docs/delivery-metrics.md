@@ -1,256 +1,503 @@
-# Delivery Metrics
+<!-----
 
-## Executive Summary:
+You have some errors, warnings, or alerts. If you are using reckless mode, turn it off to see inline alerts.
+* ERRORs: 0
+* WARNINGs: 0
+* ALERTS: 2
 
-Below defines the approach for measuring product teams.  The measuring approach will be uniform across product delivery.  There is no one single metric that rules them all.  Focusing on one metric will cause over-rotation in one direction and will negatively impact the others.  The outcome is not a “big brother is watching” nor is it a way to measure individual performance rather it’s a mechanism to provide product **teams** signals (quantitative and qualitative) as to how they are delivering their product against an opinionated set of engineering practices and principles (sensible defaults) as well as a measure for overall team culture and joy.
+Conversion time: 2.053 seconds.
 
-### Assumptions and Approach
 
-- Metrics will be gathered real-time or as near real-time as possible and will not impede delivery.  (i.e. if the metrics collection system is down product delivery will not be impacted.)
+Using this Markdown file:
 
-## 4 Key Metrics
+1. Paste this output into your source file.
+2. See the notes and action items below regarding this conversion run.
+3. Check the rendered output (headings, lists, code blocks, tables) for proper
+   formatting and use a linkchecker before you publish this page.
 
-These metrics have become the industry defacto for measuring teams and we at Liatrio agree these are a meaningful way to measure teams.  However, these 4 key metrics are lagging indicators on team performance and we believe in order to drive change the engineering practices and principles need to be followed to impact change.  We are leveraging Sensible Defaults and Joy Index to provide teams a mechanism to gauge how they are performing.
+Conversion notes:
+
+* Docs to Markdown version 1.0β34
+* Mon Sep 18 2023 12:58:23 GMT-0700 (PDT)
+* Source doc: Team Effectiveness & Productivity Metrics (POV) 
+* Tables are currently converted to HTML tables.
+* This document has images: check for >>>>>  gd2md-html alert: inline image link in generated source and store images to your server. NOTE: Images in exported zip file from Google Docs may not appear in the same order as they do in your doc. Please check the images!
+
+
+WARNING:
+You have 8 H1 headings. You may want to use the "H1 -> H2" option to demote all headings by one level.
+
+----->
+
+<!-- THIS NEEDS TO BE FIXED (DO NOT DELETE) -->
+<!--
+<p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 0; WARNINGs: 1; ALERTS: 2.</p>
+<ul style="color: red; font-weight: bold"><li>See top comment block for details on ERRORs and WARNINGs. <li>In the converted Markdown or HTML, search for inline alerts that start with >>>>>  gd2md-html alert:  for specific instances that need correction.</ul>
+
+<p style="color: red; font-weight: bold">Links to alert messages:</p><a href="#gdcalert1">alert1</a>
+<a href="#gdcalert2">alert2</a>
+
+<p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
+
+
+
+
+<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image1.png "image_tooltip")
+ 	
+
+<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image2.png "image_tooltip")
+
+
+
+
 
 <table>
-  <tbody>
-    <tr> <!-- HEADERS-->
-      <th>Metrics</th>
-      <th align="left">What is Measured</th>
-      <th align="left">Considerations</th>
-    </tr>
-    <tr>  <!-- FIRST ROW -->
-      <td>
-        <b>Deployment Frequency</b><br>
-        Source(s): CircleCI, DataDog</td>
-      <td align="left">
-        Deployment frequency, to <b>production</b>, is a good indicator for how small of batches teams are working.<br><br>
-        IN PROGRESS - Implemented but the solution is not sustainable.
-      </td>
-      <td>
-        <ul>
-          <li>
-            For teams who are not fully in control of their production deployments showing deploy frequency to the lower environments is beneficial (Dev, QA, etc.)
-          </li>
-          <li>
-            Teams should set a minimum target a production deployments per day.
-          </li>
-        </ul>
-      </td>
-    </tr>
-    <tr>  <!-- SECOND ROW -->
-      <td>Lead Time for Changes</td>
-      <td align="left">
-        The amount of time it takes a commit to get into production
-      </td>
-      <td align="left"></td>
-    </tr>
-    <tr>  <!-- THIRD ROW -->
-      <td>Mean Time to Restore Service (MTTR)</td>
-      <td align="left">
-        How long it takes an organization to recover from a failure in production
-      </td>
-      <td align="left"></td>
-    </tr>
-    <tr>  <!-- Fourth ROW -->
-      <td>Change Failure Rate</td>
-      <td align="left">
-        The percentage of deployments causing a failure in production
-      </td>
-      <td align="left"></td>
-    </tr>
-  </tbody>
+  <tr>
+   <td><strong>Team Effectiveness and Productivity Metrics</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>August 2023
+   </td>
+  </tr>
 </table>
+-->
 
-## Sensible Defaults
 
-The sensible defaults are the engineering practices & standards for product delivery.  The below metrics are signals for product teams to see how they are tracking against the engineering practices.
+#### Our recommendation is to collect the following metrics for team effectiveness & productivity. 
+
+**Delivery Metrics (Product & Squad level)**
+
+1. Lead Time - Tracks the time it takes for a code change to go from commit (branch or main) to production 
+2. Deployment Frequency - Measures how often code is deployed 
+3. Change Failure Rate* - Percentage of changes that result in failures after it is in production or released to end user
+4. Minutes of Impact - Calculates the down time from a service disruption over set time
+
+**Engineering Metrics (Squad level)**
+
+5. Branch & PR Age - Evaluates development best practices on repos
+6. Code Coverage - Provides percent of unit testing covering the lines of code
+7. Code Quality - Assesses high or low quality of code as well as security related defects
+
+**Joy Index (all level)**
+
+8. Team & Leadership Joy Index - Benchmarks individual developer experience, satisfaction, and happiness
+
+**Product Metrics (Product level)**
+
+9. Business OKRs defined & measurable - Verify the squads have established high quality OKRs with clearly defined measures
 
 <table>
-  <tbody>
-    <tr> <!-- HEADERS-->
-      <th>Sensible Defaults</th>
-      <th align="left">What is Measured</th>
-      <th align="left">Considerations</th>
-    </tr>
-    <tr>  <!-- FIRST ROW -->
-      <td>
-        <b>Trunk Based Development</b><br>
-        Source(s): GitHub Insights</td>
-      <td>
-        <ul>
-          <li>
-            DONE Number of active branches - should be far less than the number of engineers on the team.
-              <ul><li>
-                Once a change is merged into main delete topic branches locally and on remote.
-              </li></ul>
-          </li>
-          <li>
-            DONE Age of open branches - other than main - branch life should be measured in minutes and hours not days.
-          </li>
-          <li>
-            DONE PR Duration - life cycle should be measured in minutes and hours not days
-          </li>
-        </ul>
-      </td>
-      <td>
-        <ul>
-          <li>
-            How to leverage network insights to show commits to main over time like GitHub Insights does?
-          </li>
-        </ul>
-      </td>
-    </tr>
-    <tr>  <!-- SECOND ROW -->
-      <td>
-        <b>Small Stories</b><br>
-        Source(s): JIRA
-      </td>
-      <td align="left">
-        Cycle time in JIRA from In Progress (work started) to Done (work complete) - start out by targeting 1 story per engineer per business day (3 days max) until you find the right pace for your team.
-        <ul>
-          <li>
-            Track average and standard deviation of cycle time.
-          </li>
-          <li>
-            Log the WIP
-          </li>
-        </ul>
-      </td>
-      <td align="left"></td>
-    </tr>
-    <tr>  <!-- THIRD ROW -->
-      <td>
-        <b>Team Ownership of Quality</b><br>
-        Source(s): CodeClimate  
-      </td>
-      <td align="left">
-        <b>Unit Testing (TDD)</b>
-        <ul>
-          <li>
-            DONE Code Climate - Unit Test code coverage - target 80% for net new code
-          </li>
-          <li>
-            Cyclomatic Complexity - I’m not sure this is being calculated by CodeClimate, rather this is more of a feature of SonarQube
-          </li>
-          <li>
-            Technical Debt Ratio
-          </li>
-        </ul>
-      </td>
-      <td align="left">
-        <ul><li>
-          For existing code bases (mono-repos) where multiple teams are pushing code changes, start by measuring and gating on net new code changes.
-        </li></ul>
-      </td>
-    </tr>
-    <tr>  <!-- Fourth ROW -->
-      <td>
-        <b>Build in Security</b><br>
-        Source(s): Synk  
-      </td>
-      <td align="left">
-      Snyk - Number of vulnerabilities over time - Critical & High. 
-        <ul>
-          <li>MTTR on Critical and High - Identified to remediated</li>
-          <li><b>Critical</b> should be resolved in ~ 14 days</li>
-          <li><b>High</b> should be resolved in 30 - 45 days.</li>
-          <li>Date of discovery of CVE not date of identified by Snyk</li>
-          <li>Fixed vs opened ratios of issues.</li>
-          <li>Running summary from the last 30 days, fixed vulns, (newly) reported, ignored (what are they choosing not to fix)</li>
-        </ul>
-      </td>
-      <td align="left"></td>
-    </tr>
-    <tr>  <!-- FIFTH ROW -->
-      <td>
-        <b>Pair Programming</b><br>
-        Source(s): GitHub  
-      </td>
-      <td align="left">
-        <ul>
-          <li>Co-Authored commits</li>
-          <li>Huddles</li>
-          <li>Open channel communication</li>
-        </ul>
-      </td>
-      <td align="left"></td>
-    </tr>
-    <tr>  <!-- SIXTH ROW -->
-      <td>
-        <b>Automated Deployment</b><br>
-        Source(s): CircleCI
-      </td>
-      <td align="left">
-        <ul>
-          From pushing a code change, an automated build process provides feedback that the build is production-deployable in minutes.
-          <li>
-            <b>Pipeline MTTR</b> - when you have a failed build what’s the time to recover
-            <ul><li>
-              The main branch is your production candidate branch and should be in good running order to facilitate frequent production deployments.
-            </li></ul>
-          </li>
-        </ul>
-      </td>
-      <td align="left"></td>
-    </tr>
-    <tr>  <!-- SEVENTH ROW -->
-      <td>
-        <b>Fast Automated Builds</b><br>
-        Source(s): CircleCI  
-      </td>
-      <td align="left">
-        <ul>
-          <li>
-            From pushing a code change, an automated build process provides feedback that the build is production-deployable in minutes.
-          </li>
-          <li>
-            <b>Pipeline Duration by Stage</b> - Can be pulled from CircleCI api target < 10 from commit to deploy anything more is not fast feedback.
-          </li>
-        </ul>
-      </td>
-      <td align="left"></td>
-    </tr>
-    <tr>  <!-- EIGTH ROW -->
-      <td>
-        <b>Build for Production</b><br>
-        Source(s): DataDog?
-      </td>
-      <td align="left">
-        <ul>
-          <li>
-            Definition of done for a feature includes at minimum:
-            <ul>
-              <li>
-                ensuring that the application is observable and supportable in production
-              </li>
-              <li>
-                logs, traces, and metrics are available and useful
-              </li>
-              <li>
-                monitoring and alerts are configured
-              </li>
-              <li>
-                on-call team members are prepared to respond quickly to any failures or outages (e.g. production access, runbooks in place)
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </td>
-      <td align="left"></td>
-    </tr>
-    <!-- Add new row here -->
-  </tbody>
+  <tr>
+   <td>
+Theme
+   </td>
+   <td>Metrics
+   </td>
+   <td>Focus Relentlessly 
+   </td>
+   <td>Excel Technically 
+   </td>
+   <td>High Performing Team
+   </td>
+  </tr>
+  <tr>
+   <td rowspan="4" >Delivery Metrics
+<p>
+(Product & Squad level)
+   </td>
+   <td>Lead Time
+   </td>
+   <td>✔️
+   </td>
+   <td>✔️
+   </td>
+   <td>✔️
+   </td>
+  </tr>
+  <tr>
+   <td>Deployment Frequency
+   </td>
+   <td>
+   </td>
+   <td>✔️
+   </td>
+   <td>✔️
+   </td>
+  </tr>
+  <tr>
+   <td>Change Failure Rate*
+   </td>
+   <td>
+   </td>
+   <td>✔️
+   </td>
+   <td>✔️
+   </td>
+  </tr>
+  <tr>
+   <td>Minutes of Impact
+   </td>
+   <td>
+   </td>
+   <td>✔️
+   </td>
+   <td>✔️
+   </td>
+  </tr>
+  <tr>
+   <td rowspan="4" >Engineering Metrics 
+<p>
+(Squad level)
+   </td>
+   <td>Branch & PR Age
+   </td>
+   <td>
+   </td>
+   <td>✔️
+   </td>
+   <td>✔️
+   </td>
+  </tr>
+  <tr>
+   <td>Code Coverage
+   </td>
+   <td>
+   </td>
+   <td>✔️
+   </td>
+   <td>✔️
+   </td>
+  </tr>
+  <tr>
+   <td>Code Quality
+   </td>
+   <td>
+   </td>
+   <td>✔️
+   </td>
+   <td>✔️
+   </td>
+  </tr>
+  <tr>
+   <td>Joy Index
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+   <td>✔️
+   </td>
+  </tr>
+  <tr>
+   <td>Product Metrics<strong> </strong>(Product level)
+   </td>
+   <td>Business OKRs defined & measurable
+   </td>
+   <td>✔️
+   </td>
+   <td>
+   </td>
+   <td>✔️
+   </td>
+  </tr>
 </table>
 
 
-| Sensible Defaults | What is Measured | Considerations |
-|:---|:---|:---|
-| **Trunk Based Development**<br>Source(s): GitHub Insights | <ul><li>DONE Number of active branches - should be far less than the number of engineers on the team.</li><ul><li>Once a change is merged into main delete topic branches locally and on remote.</li></ul><li>DONE Age of open branches - other than main - branch life should be measured in minutes and hours not days.</li><li>DONE PR Duration - life cycle should be measured in minutes and hours not days</li></ul> | <ul><li>How to leverage network insights to show commits to main over time like GitHub Insights does? </li></ul> |
-| **Small Stories**<br>Source(s): JIRA | <ul><li>Cycle time in JIRA from In Progress (work started) to Done (work complete) - start out by targeting 1 story per engineer per business day (3 days max) until you find the right pace for your team.</li><li>Track average and standard deviation of cycle time.</li><li>Log the WIP</li></ul> | |
-| **Team Ownership of Quality**<br>Source(s): CodeClimate | <ul><li><b>Unit Testing (TDD)</b></li><li>DONE Code Climate - Unit Test code coverage - target 80% for net new code</li><li>Cyclomatic Complexity - I’m not sure this is being calculated by CodeClimate, rather this is more of a feature of SonarQube</li><li>Technical Debt Ratio</li></ul> | <ul><li>For existing code bases (mono-repos) where multiple teams are pushing code changes, start by measuring and gating on net new code changes.</li></ul> |
-| **Build in Security**<br>Source(s): Synk | <ul><li>Snyk - Number of vulnerabilities over time - Critical & High.</li><li>MTTR on Critical and High - Identified to remediated</li><li><b>Critical</b> should be resolved in ~ 14 days</li><li><b>High</b> should be resolved in 30 - 45 days.</li><li>Date of discovery of CVE not date of identified by Snyk</li><li>Fixed vs opened ratios of issues.</li><li>Running summary from the last 30 days, fixed vulns, (newly) reported, ignored (what are they choosing not to fix)</li></ul> | |
-| **Pair Programming**<br>Source(s): GitHub | <ul><li>Co-Authored commits</li><li>Huddles</li><li>Open channel communication</li></ul> | |
-| **Automated Deployment**<br>Source(s): CircleCI | <ul><li>From pushing a code change, an automated build process provides feedback that the build is production-deployable in minutes.</li><li><b>Pipeline MTTR</b> - when you have a failed build what’s the time to recover</li><ul><li>The main branch is your production candidate branch and should be in good running order to facilitate frequent production deployments.</li></ul></ul> | |
-| **Fast Automated Builds**<br>Source(s): CircleCI | <ul><li>From pushing a code change, an automated build process provides feedback that the build is production-deployable in minutes.</li><li><b>Pipeline Duration by Stage</b> - Can be pulled from CircleCI api target < 10 from commit to deploy anything more is not fast feedback.</li></ul> | |
-| **Build for Production**<br>Source(s): DataDog? | <ul><li>Definition of done for a feature includes at minimum:</li><ul><li>ensuring that the application is observable and supportable in production</li><li>logs, traces, and metrics are available and useful</li><li>monitoring and alerts are configured</li><li>on-call team members are prepared to respond quickly to any failures or outages (e.g. production access, runbooks in place)</li></ul></ul> | |
+_* Currently **Change Failure Rate** is not measurable both at Product or Squad level in AA_
+
+
+# Performance Pulse Check
+
+
+<table>
+  <tr>
+   <td>Metrics
+   </td>
+   <td><span style="text-decoration:underline;">Run </span>
+   </td>
+   <td><span style="text-decoration:underline;">Walk </span>
+   </td>
+   <td><span style="text-decoration:underline;">Crawl</span>
+   </td>
+  </tr>
+  <tr>
+   <td>Lead Time
+   </td>
+   <td>Less than 1 hour
+   </td>
+   <td>Between one
+<p>
+week and
+<p>
+one month
+   </td>
+   <td>Between one
+<p>
+month and
+<p>
+six months
+   </td>
+  </tr>
+  <tr>
+   <td>Deployment Frequency
+   </td>
+   <td>On Demand/Multiple times per day
+   </td>
+   <td>Between once per day to once per week
+   </td>
+   <td>Between 2 weeks and a month
+   </td>
+  </tr>
+  <tr>
+   <td>
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>Change Failure Rate
+   </td>
+   <td>0-7% (&lt;15 min)
+   </td>
+   <td>7-15% (1+ hours)
+   </td>
+   <td>16-30% (2+ hours)
+   </td>
+  </tr>
+  <tr>
+   <td>Minutes of Impact
+   </td>
+   <td>Less than 15 minutes
+   </td>
+   <td>More than 1 hour
+   </td>
+   <td>More than 2 hours
+   </td>
+  </tr>
+  <tr>
+   <td>Branch & PR Age
+   </td>
+   <td>Less than 1 day
+   </td>
+   <td>Less than 3 days
+   </td>
+   <td>1 week to 1 month
+   </td>
+  </tr>
+  <tr>
+   <td>Code Coverage
+   </td>
+   <td>80-90%+ for existing & new code
+   </td>
+   <td>20-50% for existing code
+<p>
+80%+ for new code
+   </td>
+   <td>0-50% for existing code
+<p>
+80%+ for new code
+   </td>
+  </tr>
+  <tr>
+   <td>Code Quality
+<p>
+(vulnerabilities)
+   </td>
+   <td> 0 critical
+<p>
+0 high 
+<p>
+0 medium
+<p>
+0 low
+   </td>
+   <td> 0 critical 
+<p>
+ 0 high 
+   </td>
+   <td> 0 critical
+   </td>
+  </tr>
+  <tr>
+   <td>Joy Index
+   </td>
+   <td>eNPS 30 to 80+
+   </td>
+   <td>eNPS -10 to 30+
+   </td>
+   <td>eNPS -30 to 10+
+   </td>
+  </tr>
+  <tr>
+   <td>Business OKRs defined & measurable
+   </td>
+   <td>Defined with clear and inspiring objectives that align with the company's vision
+   </td>
+   <td>Defined but room for improvement regarding alignment with company's vision
+   </td>
+   <td>Defined but challenging for squads to understand how their work contributes to the company's vision
+   </td>
+  </tr>
+</table>
+
+
+
+# 
+
+
+# Why Metrics Matter 
+
+
+### Quantifiable Performance 
+
+
+
+* Metrics provide objective measurements of squad performance, fostering a data-driven culture. They enable squads to track progress, set benchmarks, and identify areas for improvement. 
+
+
+### Continuous Improvement 
+
+
+
+* By identifying bottlenecks and inefficiencies, metrics drive continuous improvement efforts. Squads can refine processes, optimize workflows, and enhance collaboration to accelerate delivery. 
+
+
+### Risk Mitigation 
+
+
+
+* Lower change failure rates and shorter Minutes of Impact indicate increased software stability and reliability. This minimizes business risks associated with service disruptions and costly downtimes. 
+
+
+### Informed Decision-Making 
+
+
+
+* Metrics facilitate informed decision-making by offering a comprehensive view of the software delivery pipeline. Squads can make strategic choices to align with business goals. 
+
+
+### Cross-Functional Collaboration 
+
+
+
+* These metrics encourage collaboration between development, operations, and quality assurance teams. Silos are broken down, fostering a holistic approach to software delivery. 
+
+Software powers innovation and competitive advantage and metrics have emerged as the compass guiding software delivery squads toward success. They provide a roadmap to accelerated delivery, enhanced quality, and collaborative excellence. By leveraging the insights gleaned from these metrics, organizations can transform their software delivery processes and stay at the forefront of their industries.
+
+
+# 
+
+
+# Delivery Metrics  (Product & Squad level)
+
+
+## Lead Time 
+
+Measures the time it takes for a code change to go from commit (branch or main) to production. Provides insights into workflow efficiency and bottlenecks. Shorter lead times indicate smoother processes and quicker value delivery. 
+
+
+
+* _How to measure:_ Conduct squad level VSM to gather time code change goes from commit to production
+* _Example: _Squad’s lead time is 509.15h (~64 days). Working time is 163.85h (~20 days)
+
+
+## Deploy Frequency 
+
+Measures how often code is deployed. Enables rapid iteration and faster time-to-market. Encourages small, incremental changes, reducing the risk of failures. 
+
+
+
+* _How to measure:_ Divide the total number of deployments made in a given time period (e.g., a month) by the total number of days in that period
+* _Example:_ If a squad deployed code 10 times in a month with 31 days, the deployment frequency would be 10/31 = 0.32 deployments per day
+
+
+## Change Failure Rate 
+
+Gauges the percentage of deployments that result in failures. Offers visibility into code quality and stability. Low failure rates signify robust testing and higher software reliability. 
+
+
+
+* _How to measure:_ Percentage of changes that were made to code that then resulted in incident/rollback/or any type of prod failure. Calculated by counting the number of deployment failures and then dividing by number of total deployments.
+* _Example:_ If your squad deployed five times this week and one of them resulted in a failure, your change failure rate is 20%
+
+
+## Minutes of Impact (MoI)
+
+Calculates the down time from a service disruption over set time. Highlights the squad’s ability to detect and resolve issues swiftly. Shorter MoI reflects strong incident response and system resilience.
+
+
+
+* _How to measure:_ Measures time it takes for service to recover from failure. Calculated by tracking the average time between a bug report and the moment a bug fix is deployed. 
+* _Example: _If your squad had four incidents in a 40-hour workweek and spent one total hour on them (from alert to fix), your MoI for that week would be 15 minutes
+
+
+# Engineering Metrics (Squad level)
+
+
+## Branch & PR Age 
+
+Evaluates development best practices on repos.
+
+
+
+* _How to measure: _Calculated by the overall average age of branches & pull requests across each repo
+* _Example: _Number of commits a branch is behind or ahead of main. Hours or days a PR has existed before merging into main.  
+
+
+## Code Coverage
+
+Provides percent of unit testing covering the lines of code. Assesses the test performance.
+
+
+
+* _How to measure: _3rd party tooling which runs in your automated CI/CD builds
+* _Example: _If the code were testing has a 100 lines of code and the number of lines of code that is actually validated in the same software is 50, then the code coverage percentage of this software will be 50%
+
+
+## Code Quality
+
+Assesses high or low quality of code as well as security related defects. Identifies potential risks of compromising code and indicated where to fix software defects
+
+
+
+* _How to measure: _3rd party tooling which runs in your automated CI/CD builds
+* _Example: _1 aspect of code quality is reusability. This is best measured by counting the number of interdependencies. The more there are, generally the less reusable the code. 
+
+
+## Joy Index 
+
+Benchmarks individual developer experience, satisfaction, and happiness.
+
+
+
+* _How to measure:_ Employee net promoter score tracks employee engagement and measures the impact of their people and culture initiatives. The eNPS shows how workers feel about your organization. 
+* _Example: _Question -_ _“How likely are you to recommend us as a place to work for your family, friends, co-workers?”
+
+
+# 
+
+
+# Product Metrics (Product level)
+
+
+## Business OKRs defined & measurable
+
+OKRs are defined, with clear and inspiring Objectives that align with the company's overall mission and vision. Key Results are specific, measurable, and quantifiable, providing a clear path towards achieving the Objectives. OKRs are regularly reviewed and updated as needed, with a strong commitment to achieving them.
+
+
+
+* _How to measure:_ All team members understand the OKRs and how their work contributes to their achievement. The OKRs are logged in the company's OKR tracker. 
+* _Example:_ Baggage Services Product; Reduce the percentage in manual edits to optimizer suggested solutions from 86% to 43% by Q3, 23 inorder to increase reliance on the TLink optimizer
+
+
