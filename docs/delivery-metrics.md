@@ -332,7 +332,7 @@ Measures the time it takes for a code change to go from commit (branch or main) 
 
 
 * _How to measure:_ Conduct squad level VSM to gather time code change goes from commit to production
-* _Example: _Squad’s lead time is 509.15h (~64 days). Working time is 163.85h (~20 days)
+* _Example:_ Squad’s lead time is 509.15h (~64 days). Working time is 163.85h (~20 days)
 
 
 **Deploy Frequency**
@@ -362,7 +362,7 @@ Calculates the down time from a service disruption over set time. Highlights the
 
 
 * _How to measure:_ Measures time it takes for service to recover from failure. Calculated by tracking the average time between a bug report and the moment a bug fix is deployed. 
-* _Example: _If your squad had four incidents in a 40-hour workweek and spent one total hour on them (from alert to fix), your MoI for that week would be 15 minutes
+* _Example:_ If your squad had four incidents in a 40-hour workweek and spent one total hour on them (from alert to fix), your MoI for that week would be 15 minutes
 
 
 ### Engineering Metrics (Squad level)
@@ -374,8 +374,8 @@ Evaluates development best practices on repos.
 
 
 
-* _How to measure: _Calculated by the overall average age of branches & pull requests across each repo
-* _Example: _Number of commits a branch is behind or ahead of main. Hours or days a PR has existed before merging into main.  
+* _How to measure:_ Calculated by the overall average age of branches & pull requests across each repo
+* _Example:_ Number of commits a branch is behind or ahead of main. Hours or days a PR has existed before merging into main.  
 
 
 **Code Coverage**
@@ -383,8 +383,8 @@ Evaluates development best practices on repos.
 Provides percent of unit testing covering the lines of code. Assesses the test performance.
 
 
-* _How to measure: _3rd party tooling which runs in your automated CI/CD builds
-* _Example: _If the code were testing has a 100 lines of code and the number of lines of code that is actually validated in the same software is 50, then the code coverage percentage of this software will be 50%
+* _How to measure:_ 3rd party tooling which runs in your automated CI/CD builds
+* _Example:_ If the code were testing has a 100 lines of code and the number of lines of code that is actually validated in the same software is 50, then the code coverage percentage of this software will be 50%
 
 
 **Code Quality**
@@ -393,8 +393,8 @@ Assesses high or low quality of code as well as security related defects. Identi
 
 
 
-* _How to measure: _3rd party tooling which runs in your automated CI/CD builds
-* _Example: _1 aspect of code quality is reusability. This is best measured by counting the number of interdependencies. The more there are, generally the less reusable the code. 
+* _How to measure:_ 3rd party tooling which runs in your automated CI/CD builds
+* _Example:_ 1 aspect of code quality is reusability. This is best measured by counting the number of interdependencies. The more there are, generally the less reusable the code. 
 
 
 **Joy Index**
@@ -404,7 +404,7 @@ Benchmarks individual developer experience, satisfaction, and happiness.
 
 
 * _How to measure:_ Employee net promoter score tracks employee engagement and measures the impact of their people and culture initiatives. The eNPS shows how workers feel about your organization. 
-* _Example: _Question -_ _“How likely are you to recommend us as a place to work for your family, friends, co-workers?”
+* _Example: Question_ - “How likely are you to recommend us as a place to work for your family, friends, co-workers?”
 
 
 ### Product Metrics (Product level)
