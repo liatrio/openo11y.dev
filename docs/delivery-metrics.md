@@ -1,83 +1,29 @@
-<!-----
+# Leading Indicators for Delivery Effectiveness
 
-You have some errors, warnings, or alerts. If you are using reckless mode, turn it off to see inline alerts.
-* ERRORs: 0
-* WARNINGs: 0
-* ALERTS: 2
+<span class="highlight-bg"> Our recommendation is to collect the following metrics for delivery effectiveness.</span>
 
-Conversion time: 2.053 seconds.
-
-
-Using this Markdown file:
-
-1. Paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β34
-* Mon Sep 18 2023 12:58:23 GMT-0700 (PDT)
-* Source doc: Team Effectiveness & Productivity Metrics (POV) 
-* Tables are currently converted to HTML tables.
-* This document has images: check for >>>>>  gd2md-html alert: inline image link in generated source and store images to your server. NOTE: Images in exported zip file from Google Docs may not appear in the same order as they do in your doc. Please check the images!
-
-
-WARNING:
-You have 8 H1 headings. You may want to use the "H1 -> H2" option to demote all headings by one level.
-
------>
-
-<!-- THIS NEEDS TO BE FIXED (DO NOT DELETE) -->
-<!--
-<p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 0; WARNINGs: 1; ALERTS: 2.</p>
-<ul style="color: red; font-weight: bold"><li>See top comment block for details on ERRORs and WARNINGs. <li>In the converted Markdown or HTML, search for inline alerts that start with >>>>>  gd2md-html alert:  for specific instances that need correction.</ul>
-
-<p style="color: red; font-weight: bold">Links to alert messages:</p><a href="#gdcalert1">alert1</a>
-<a href="#gdcalert2">alert2</a>
-
-<p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
-
-
-
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image1.png "image_tooltip")
- 	
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image2.png "image_tooltip")
--->
-
-# Team Effectiveness and Productivity Metrics
-
-#### <span class="highlight-bg"> Our recommendation is to collect the following metrics for team effectiveness & productivity.</span> 
+### Recommended Metrics
 
 **Delivery Metrics (Product & Squad level)**
 
-1. Lead Time - Tracks the time it takes for a code change to go from commit (branch or main) to production 
-2. Deployment Frequency - Measures how often code is deployed 
-3. Change Failure Rate* - Percentage of changes that result in failures after it is in production or released to end user
-4. Minutes of Impact - Calculates the down time from a service disruption over set time
+* Lead Time - Tracks the time it takes for a code change to go from commit (branch or main) to production 
+* Deployment Frequency - Measures how often code is deployed 
+* Change Failure Rate* - Percentage of changes that result in failures after it is in production or released to end user
+* Minutes of Impact - Calculates the down time from a service disruption over set time
 
 **Engineering Metrics (Squad level)**
 
-5. Branch & PR Age - Evaluates development best practices on repos
-6. Code Coverage - Provides percent of unit testing covering the lines of code
-7. Code Quality - Assesses high or low quality of code as well as security related defects
+* Branch & PR Age - Evaluates development best practices on repos
+* Code Coverage - Provides percent of unit testing covering the lines of code
+* Code Quality - Assesses high or low quality of code as well as security related defects
 
 **Joy Index (all level)**
 
-8. Team & Leadership Joy Index - Benchmarks individual developer experience, satisfaction, and happiness
+* Team & Leadership Joy Index - Benchmarks individual developer experience, satisfaction, and happiness
 
 **Product Metrics (Product level)**
 
-9. Business OKRs defined & measurable - Verify the squads have established high quality OKRs with clearly defined measures
+* Business OKRs defined & measurable - Verify the squads have established high quality OKRs with clearly defined measures
 
 <table>
   <tr>
@@ -197,10 +143,7 @@ You have 8 H1 headings. You may want to use the "H1 -> H2" option to demote all 
 _Currently **Change Failure Rate** is not measurable both at Product or Squad level in AA_
 
 
-#
-
-
-# Performance Pulse Check
+### Performance Pulse Check
 
 
 <table>
@@ -339,41 +282,38 @@ six months
 </table>
 
 
-# 
+### Why Metrics Matter 
 
 
-## Why Metrics Matter 
-
-
-#### Quantifiable Performance
+**Quantifiable Performance**
 
 
 
 * Metrics provide objective measurements of squad performance, fostering a data-driven culture. They enable squads to track progress, set benchmarks, and identify areas for improvement. 
 
 
-#### Continuous Improvement
+**Continuous Improvement**
 
 
 
 * By identifying bottlenecks and inefficiencies, metrics drive continuous improvement efforts. Squads can refine processes, optimize workflows, and enhance collaboration to accelerate delivery. 
 
 
-#### Risk Mitigation
+**Risk Mitigation**
 
 
 
 * Lower change failure rates and shorter Minutes of Impact indicate increased software stability and reliability. This minimizes business risks associated with service disruptions and costly downtimes. 
 
 
-#### Informed Decision-Making
+**Informed Decision-Making**
 
 
 
 * Metrics facilitate informed decision-making by offering a comprehensive view of the software delivery pipeline. Squads can make strategic choices to align with business goals. 
 
 
-#### Cross-Functional Collaboration
+**Cross-Functional Collaboration**
 
 
 
@@ -382,13 +322,10 @@ six months
 Software powers innovation and competitive advantage and metrics have emerged as the compass guiding software delivery squads toward success. They provide a roadmap to accelerated delivery, enhanced quality, and collaborative excellence. By leveraging the insights gleaned from these metrics, organizations can transform their software delivery processes and stay at the forefront of their industries.
 
 
-# 
+### Delivery Metrics  (Product & Squad level)
 
 
-## Delivery Metrics  (Product & Squad level)
-
-
-### **Lead Time**
+**Lead Time**
 
 Measures the time it takes for a code change to go from commit (branch or main) to production. Provides insights into workflow efficiency and bottlenecks. Shorter lead times indicate smoother processes and quicker value delivery. 
 
@@ -398,7 +335,7 @@ Measures the time it takes for a code change to go from commit (branch or main) 
 * _Example: _Squad’s lead time is 509.15h (~64 days). Working time is 163.85h (~20 days)
 
 
-### **Deploy Frequency**
+**Deploy Frequency**
 
 Measures how often code is deployed. Enables rapid iteration and faster time-to-market. Encourages small, incremental changes, reducing the risk of failures. 
 
@@ -408,7 +345,7 @@ Measures how often code is deployed. Enables rapid iteration and faster time-to-
 * _Example:_ If a squad deployed code 10 times in a month with 31 days, the deployment frequency would be 10/31 = 0.32 deployments per day
 
 
-### **Change Failure Rate**
+**Change Failure Rate**
 
 Gauges the percentage of deployments that result in failures. Offers visibility into code quality and stability. Low failure rates signify robust testing and higher software reliability. 
 
@@ -418,7 +355,7 @@ Gauges the percentage of deployments that result in failures. Offers visibility 
 * _Example:_ If your squad deployed five times this week and one of them resulted in a failure, your change failure rate is 20%
 
 
-### **Minutes of Impact (MoI)**
+**Minutes of Impact (MoI)**
 
 Calculates the down time from a service disruption over set time. Highlights the squad’s ability to detect and resolve issues swiftly. Shorter MoI reflects strong incident response and system resilience.
 
@@ -428,10 +365,10 @@ Calculates the down time from a service disruption over set time. Highlights the
 * _Example: _If your squad had four incidents in a 40-hour workweek and spent one total hour on them (from alert to fix), your MoI for that week would be 15 minutes
 
 
-## Engineering Metrics (Squad level)
+### Engineering Metrics (Squad level)
 
 
-### **Branch & PR Age** 
+**Branch & PR Age** 
 
 Evaluates development best practices on repos.
 
@@ -441,17 +378,16 @@ Evaluates development best practices on repos.
 * _Example: _Number of commits a branch is behind or ahead of main. Hours or days a PR has existed before merging into main.  
 
 
-### **Code Coverage**
+**Code Coverage**
 
 Provides percent of unit testing covering the lines of code. Assesses the test performance.
-
 
 
 * _How to measure: _3rd party tooling which runs in your automated CI/CD builds
 * _Example: _If the code were testing has a 100 lines of code and the number of lines of code that is actually validated in the same software is 50, then the code coverage percentage of this software will be 50%
 
 
-### **Code Quality**
+**Code Quality**
 
 Assesses high or low quality of code as well as security related defects. Identifies potential risks of compromising code and indicated where to fix software defects
 
@@ -461,7 +397,7 @@ Assesses high or low quality of code as well as security related defects. Identi
 * _Example: _1 aspect of code quality is reusability. This is best measured by counting the number of interdependencies. The more there are, generally the less reusable the code. 
 
 
-### **Joy Index**
+**Joy Index**
 
 Benchmarks individual developer experience, satisfaction, and happiness.
 
@@ -471,13 +407,10 @@ Benchmarks individual developer experience, satisfaction, and happiness.
 * _Example: _Question -_ _“How likely are you to recommend us as a place to work for your family, friends, co-workers?”
 
 
-# 
+### Product Metrics (Product level)
 
 
-## Product Metrics (Product level)
-
-
-### **Business OKRs defined & measurable**
+**Business OKRs defined & measurable**
 
 OKRs are defined, with clear and inspiring Objectives that align with the company's overall mission and vision. Key Results are specific, measurable, and quantifiable, providing a clear path towards achieving the Objectives. OKRs are regularly reviewed and updated as needed, with a strong commitment to achieving them.
 
