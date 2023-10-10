@@ -170,7 +170,7 @@ Software powers innovation and competitive advantage and metrics have emerged as
 Measures the time it takes for a code change to go from commit (branch or main) to production. Provides insights into workflow efficiency and bottlenecks. Shorter lead times indicate smoother processes and quicker value delivery. 
 
 * _How to measure:_ Conduct team level Value Stream Map ( VSM) to gather time code change goes from commit to production
-* _Example: _team’s lead time is 509.15h (~64 days). Working time is 163.85h (~20 days)
+* _Example:_ team’s lead time is 509.15h (~64 days). Working time is 163.85h (~20 days)
 
 
 
@@ -197,7 +197,7 @@ Gauges the percentage of deployments that result in failures. Offers visibility 
 Calculates the time needed to recover from a service disruption and  highlights the team's ability to detect and resolve issues swiftly. Shorter MTTR reflects strong incident response and system resilience.
 
 * _How to measure:_ Measures time it takes for service to recover from failure. Calculated by tracking the average time between a time of service disruption and the moment a fix is deployed. 
-* _Example: _A team's average time from problem detection to full recovery is 90 minutes over the course of 6 months.
+* _Example:_ A team's average time from problem detection to full recovery is 90 minutes over the course of 6 months.
 
 
 
@@ -207,8 +207,8 @@ Calculates the time needed to recover from a service disruption and  highlights 
 
 Evaluates development best practices on repos.
 
-* _How to measure: _Calculated by the overall average age of branches & pull requests across each repo
-* _Example: _Number of commits a branch is behind or ahead of main. Hours or days a PR has existed before merging into main.  
+* _How to measure:_ Calculated by the overall average age of branches & pull requests across each repo
+* _Example:_ Number of commits a branch is behind or ahead of main. Hours or days a PR has existed before merging into main.  
 
 
 
@@ -216,8 +216,8 @@ Evaluates development best practices on repos.
 
 Provides percentage of code statements exercised during unit test runs. Assesses the amount of code logic invoked during unit testing.
 
-* _How to measure: _3rd party tooling which runs in your automated CI/CD builds
-* _Example: _If the code we're testing has 100 lines of code and 50 of those are executed by unit test code, then the code coverage percentage of this software is 50%
+* _How to measure:_ 3rd party tooling which runs in your automated CI/CD builds
+* _Example:_ If the code we're testing has 100 lines of code and 50 of those are executed by unit test code, then the code coverage percentage of this software is 50%
 
 
 
@@ -225,8 +225,8 @@ Provides percentage of code statements exercised during unit test runs. Assesses
 
 Grades the quality of code as well as detecting security related defects. Identifies potential vulnerabilities in code and indicates where to resolve these and other software defects
 
-* _How to measure: _3rd party tooling which runs in your automated CI/CD builds
-* _Example: _One aspect of code quality is reusability, which can be measured by counting the number of interdependencies. The more tightly-coupled the code is with surrounding code and dependencies, the less reusable the code tends to be. 
+* _How to measure:_ 3rd party tooling which runs in your automated CI/CD builds
+* _Example:_ One aspect of code quality is reusability, which can be measured by counting the number of interdependencies. The more tightly-coupled the code is with surrounding code and dependencies, the less reusable the code tends to be. 
 
 
 
@@ -235,7 +235,7 @@ Grades the quality of code as well as detecting security related defects. Identi
 Benchmarks individual developer experience, satisfaction, and happiness.
 
 * _How to measure:_ Employee Net Promoter Score tracks employee engagement and measures the impact of their people and culture initiatives. The eNPS shows how workers feel about your organization. 
-* _Example: _Question -_ _“How likely are you to recommend us as a place to work for your family, friends, co-workers?”
+* _Example:_ Question -_ _“How likely are you to recommend us as a place to work for your family, friends, co-workers?”
 
 
 
@@ -246,5 +246,3 @@ Benchmarks individual developer experience, satisfaction, and happiness.
 OKRs are defined, with clear and inspiring Objectives that align with the company's overall mission and vision. Key Results are specific, measurable, and quantifiable, providing a clear path towards achieving the Objectives. OKRs are regularly reviewed and updated as needed, with a strong commitment to achieving them.
 
 * _How to measure:_ All team members understand the OKRs and how their work contributes to their achievement. The OKRs are logged in the company's OKR tracker. 
-
-
