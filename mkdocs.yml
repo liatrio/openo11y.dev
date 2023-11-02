@@ -50,10 +50,7 @@ repo_url: https://github.com/liatrio/openo11y.dev
 nav:
   - 'Welcome to Open O11y': 'index.md'
   - 'Guidance':     
-    - 'Overview': './guidance.md'
     - 'Leading Delivery Metrics': './delivery-metrics.md'
-    - 'Measuring Joy': './joy-metrics.md'
-    - 'Security Posture': './security.md'
   - 'O11y Quick Start Platform':
     - 'Overview': './platform/README.md'
     - 'Architecture': './platform/architecture.md'
