@@ -1,15 +1,22 @@
 :root {
   /* Override the primary foreground color */
-  --md-primary-fg-color: #007DAA; 
-  --md-primary-fg-color--light: #858585; 
-  --md-primary-fg-color--dark: #262626; 
-  --md-primary-bg-color: #EBEBE8; 
-  --md-primary-bg-color--light: #F8F8F8; 
+  --md-primary-fg-color: #24AE1D;
+  --md-primary-fg-color--light: #858585;
+  --md-primary-fg-color--dark: #262626;
+  --md-primary-bg-color: #EBEBE8;
+  --md-primary-bg-color--light: #F8F8F8;
 
   /* Override the accent foreground color */
-  --md-accent-fg-color: #89DF00; 
+  --md-accent-fg-color: #24AE1D;
   --md-accent-fg-color--transparent: rgba(0, 125, 170, 0.1); /* This uses #007DAA at 10% opacity */
-  --md-accent-bg-color: #F8F8F8; 
-  --md-accent-bg-color--light: #F8F8F8; 
+  --md-accent-bg-color: #F8F8F8;
+  --md-accent-bg-color--light: #F8F8F8;
 }
 
+.md-search-result mark {
+  --md-accent-fg-color: #24AE1D;
+}
+
+[data-md-color-accent=indigo] {
+  --md-accent-fg-color: #24AE1D;
+}

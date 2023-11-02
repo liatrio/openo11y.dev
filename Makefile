@@ -6,7 +6,7 @@ poetry-install:
 	poetry install
 
 .PHONY: build
-build:
+build: poetry-install
 	poetry run mkdocs build
 
 .PHONY: serve

@@ -1,5 +1,5 @@
 .highlight-bg {
-    background-color: #2396bc;
+    background-color: #24AE1D;
     color: #ffffff;
     text-align: center; /* Doesn't work */
     width: 100%;  /* make the background color span the width of the page */
@@ -7,7 +7,7 @@
 }
 
 .highlight-hdr {
-    background-color: #117b9e;
+    background-color: #2caf25;
     text-align: center; /* Doesn't work */
     color: #ffffff;
     vertical-align: middle; /* Doesn't work */
@@ -16,9 +16,8 @@
 }
 
 .highlight-cell{
-    background-color: #40bae3;
+    background-color: #3be333;
     text-align: center !important; /* Doesn't work */
     color: #000000;
     vertical-align: middle; /* center the content vertically */
 }
-

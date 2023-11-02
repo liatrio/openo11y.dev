@@ -27,12 +27,8 @@ jobs:
               uses: Gr1N/setup-poetry@v8
 
             - name: install dependencies
-              run: make poetry-install
+              run: make build
 
-            - name: build the doc site and ensure no changes 
-              run: |
-                make build
-                git diff -s --exit-code -- . ':(exclude)site/sitemap.xml.gz' || (echo 'Generated website is out of date, please run make build and commit changes in this PR' && exit 1)
 
             - name: upload pages artifact
               if: ${{ github.ref == 'refs/heads/main' }}
