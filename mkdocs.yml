@@ -1,8 +1,9 @@
-site_name: 'Open O11y'
+site_name: 'Open Observability'
 
 theme:
   name: material
   custom_dir: docs/overrides
+  logo: img/logo_o11y_black.png
   icon:
     repo: fontawesome/brands/github
     edit: material/pencil

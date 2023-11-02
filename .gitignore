@@ -168,3 +168,6 @@ Brewfile.lock.json
 # Misc
 tmp/
 site/
+
+# mac
+.DS_Store
