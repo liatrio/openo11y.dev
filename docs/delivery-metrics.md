@@ -15,7 +15,7 @@ Metrics will be gathered real-time or as near real-time as possible and will not
 
 **Delivery Metrics**
 
-* Lead Time for Changes - Tracks the time it takes for a code change to go from commit (branch or main) to production 
+* Lead Time for Changes - Tracks the time it takes for a code change to go from commit in trunk to deployed to production.
 * Deployment Frequency - Measures how often code is deployed to Production
 * Change Failure Rate - Percentage of changes that result in failures after it is in production or released to end user
 * Mean Time to Restore (MTTR) - Calculates the time needed to recover from a service disruption; highlights the team's ability to detect and resolve issues swiftly.
@@ -167,7 +167,7 @@ Software powers innovation and competitive advantage and metrics have emerged as
 
 ### Lead Time for Change
 
-Measures the time it takes for a code change to go from commit (branch or main) to production. Provides insights into workflow efficiency and bottlenecks. Shorter lead times indicate smoother processes and quicker value delivery. 
+Measures the time it takes for a code change to go from the commit to trunk and deployed to production. Provides insights into workflow efficiency and bottlenecks. Shorter lead times indicate smoother processes and quicker value delivery. 
 
 * _How to measure:_ Conduct team level Value Stream Map ( VSM) to gather time code change goes from commit to production
 * _Example:_ team’s lead time is 509.15h (~64 days). Working time is 163.85h (~20 days)
