@@ -1,4 +1,4 @@
-site_name: 'Open Observability'
+site_name: "Open Observability"
 
 theme:
   name: material
@@ -13,7 +13,7 @@ theme:
     - scheme: default
       primary: custom
       toggle:
-        icon: material/brightness-7 
+        icon: material/brightness-7
         name: Switch to dark mode
     # Palette toggle for dark mode
     - scheme: slate
@@ -25,13 +25,11 @@ theme:
   features:
     - content.action.edit
     - content.action.view
-    - navigation.tabs
-    - navigation.tabs.sticky
     - navigation.footer
     - navigation.instant
-    - navigation.expand
     - navigation.path
     - navigation.top
+    - toc.follow
 
 markdown_extensions:
   - pymdownx.superfences:
@@ -48,12 +46,12 @@ extra_css:
 repo_url: https://github.com/liatrio/openo11y.dev
 
 nav:
-  - 'Welcome to Open O11y': 'index.md'
-  - 'Guidance':     
-    - 'Leading Delivery Metrics': './delivery-metrics.md'
-  - 'O11y Quick Start Platform':
-    - 'Overview': './platform/README.md'
-    - 'Architecture': './platform/architecture.md'
-    - 'Getting Started':
-      - 'AWS': './platform/aws.md'
-  - 'Contributing': './contributing.md'
+  - "Welcome to Open O11y": "index.md"
+  - "Guidance":
+      - "Leading Delivery Metrics": "./delivery-metrics.md"
+  - "O11y Quick Start Platform":
+      - "Overview": "./platform/README.md"
+      - "Architecture": "./platform/architecture.md"
+      - "Getting Started":
+          - "AWS": "./platform/aws.md"
+  - "Contributing": "./contributing.md"
