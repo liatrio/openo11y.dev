@@ -1,11 +1,12 @@
 # Open O11y
 
-***To improve, you must observe. Open O11y is an offshoot of an internal 
-project centered around o11y at [Liatrio](liatrio.com); geared towards this singular
-north star; enabling o11y everywhere.*** 
---- 
+---
 
-### **What is o11y?**
+> *To improve, you must observe. Open O11y is an offshoot of an internal project centered around o11y at [Liatrio](liatrio.com); geared towards this singular north star; enabling o11y everywhere*
+
+---
+
+## **What is o11y?**
 
 > **o11y** - shorthand for *observability*[^1]  which is the ability to measure the
 > internal states of a system by examining its outputs[^2].
@@ -24,26 +25,23 @@ your teams, your company and organization.
 
 With that in mind, our goal is to help enable everyone in the industry observe their systems.
 
-
-### **How do we do this?**
+## **How do we do this?**
 
 Here's some things you'll find through Open O11y that help achieve this goal:
 
-* Contributions to Open Source communities focused on O11y
-    * For example: [Open Telemetry](opentelemetry.io)
-* Open-source automations published to get organizations and teams started quickly
-    * For example: An observability stack deployable in AWS
-    * Guidance on how to use those automations & scale
-* Guidance on how to leverage metrics and what to observe related to:
-    * team effectiveness
-    * joy
-    * security
-
+- Contributions to Open Source communities focused on O11y
+  - For example: [Open Telemetry](opentelemetry.io)
+- Open-source automations published to get organizations and teams started quickly
+  - For example: An observability stack deployable in AWS
+  - Guidance on how to use those automations & scale
+- Guidance on how to leverage metrics and what to observe related to:
+  - team effectiveness
+  - joy
+  - security
 
 Just like security, o11y is a team sport. We've helped many clients implement
 and improve their observability practices, and we want to bring those contributions
 to everyone.
-
 
 [^1]: [numeronym](https://en.wikipedia.org/wiki/Numeronym)
 
