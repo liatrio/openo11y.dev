@@ -16,10 +16,6 @@ make build
 make serve
 ```
 
-### Backstage
-
-The site can be served locally in Backstage via `make backstage`
-
 ## Contributing
 
 - Images should be placed under the root `img` folder and referred to using HTML `<img>` tags
