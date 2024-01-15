@@ -18,6 +18,7 @@ make serve
 
 ## Contributing
 
+- Follow the guidelines established in [CONTRIBUTING.md](docs/CONTRIBUTING.md)
 - Images should be placed under the root `img` folder and referred to using HTML `<img>` tags
 - H3 header (`###`) should be the default header within a page
 - H2 header (`##`) will appear in the navigation as the page's table of contents
