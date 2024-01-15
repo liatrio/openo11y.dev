@@ -2,11 +2,11 @@
 
 ---
 
-> *To improve, you must observe. Open O11y is an offshoot of an internal project centered around o11y at [Liatrio](liatrio.com); geared towards this singular north star; enabling o11y everywhere*
+> *To improve, you must observe. Open O11y is one contribution from an internal Technical Advisory Group (TAG) focused on observability at [Liatrio](liatrio.com); geared towards this singular north star; enabling observability everywhere*
 
 ---
 
-## **What is o11y?**
+## What is o11y?
 
 > **o11y** - shorthand for *observability*[^1]  which is the ability to measure the
 > internal states of a system by examining its outputs[^2].
@@ -25,7 +25,7 @@ your teams, your company and organization.
 
 With that in mind, our goal is to help enable everyone in the industry observe their systems.
 
-## **How do we do this?**
+## How do we do this?
 
 Here's some things you'll find through Open O11y that help achieve this goal:
 

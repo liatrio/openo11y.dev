@@ -48,10 +48,17 @@ repo_url: https://github.com/liatrio/openo11y.dev
 nav:
   - "Welcome to Open O11y": "index.md"
   - "Guidance":
-      - "Leading Delivery Metrics": "./delivery-metrics.md"
+      - "Why Metrics Matter": "./guidance/why-metrics-matter.md"
+      # - "Who Should Use Metrics": "./guidance/using-metrics-effectively.md"
+      - "Metrics":
+          - "Overview": "./guidance/metrics/overview.md"
+          - "Lagging Delivery Inidicators": "./guidance/metrics/lagging-delivery-indicators.md"
+          - "Leading Delivery Inidicators": "./guidance/metrics/leading-delivery-indicators.md"
+          - "DevEx & Platform": "./guidance/metrics/devex-platform.md"
+          - "Satisfaction & Well-Being": "./guidance/metrics/satisfaction-well-being.md"
   - "O11y Quick Start Platform":
       - "Overview": "./platform/README.md"
       - "Architecture": "./platform/architecture.md"
-      - "Getting Started":
+      - "Recommended Implementations":
           - "AWS": "./platform/aws.md"
-  - "Contributing": "./contributing.md"
+  - "Contributing": "./CONTRIBUTING.md"
