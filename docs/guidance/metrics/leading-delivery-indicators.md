@@ -11,7 +11,7 @@ Measures the lifespan and efficiency of code integration in repos.
 
 ## Open Branches
 
-Measures the number of active and open branches in a repo, excluding the trunk
+Measures the number of active and open branches in a repo, excluding the trunk.
 
 - _How to Measure:_ Count the number of open branches in a repo.
 - _Example:_ If the `liatrio-otel-collector` repo has a main branch and 5 feature branches, then the count is 5.

@@ -1,6 +1,6 @@
 # DORA Metrics
 
-These 4 key delivery metrics from [DORA](https://dora.dev/) are the industry standard for measuring software delivery. We have found that these metrics are effective but lagging indicators of how teams are delivering software.
+The four key delivery metrics from [DORA](https://dora.dev/) are the industry standard for measuring software delivery. We have found that these metrics are essential in modern software delivery. However, these metrics are not absolute and are lagging indicators of how teams are delivering software.
 
 ## Lead Time for Changes
 

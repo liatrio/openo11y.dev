@@ -1,6 +1,6 @@
 # Why Metrics Matter
 
-Software powers innovation and competitive advantage and metrics have emerged as the compass guiding software delivery teams toward success. They provide a roadmap to accelerated delivery, enhanced quality, and collaborative excellence. By leveraging the insights gleaned from these metrics, organizations can transform their software delivery processes and stay at the forefront of their industries.
+Software powers innovation and competitive advantage. Metrics have emerged as the compass guiding software delivery teams toward success. They provide a roadmap to accelerated delivery, enhanced quality, and collaborative excellence. By leveraging the insights gleaned from the metrics contained within this guidance, organizations can transform their software delivery processes and stay at the forefront of their industries.
 
 ## Quantifiable Performance
 

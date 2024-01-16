@@ -2,7 +2,7 @@
 
 ---
 
-> *To improve, you must observe. Open O11y is one contribution from an internal Technical Advisory Group (TAG) focused on observability at [Liatrio](liatrio.com); geared towards this singular north star; enabling observability everywhere*
+*To improve, you must observe. Open O11y is one contribution from an internal Technical Advisory Group (TAG) focused on observability at [Liatrio](liatrio.com); geared towards this singular north star; enabling observability everywhere*
 
 ---
 
