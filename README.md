@@ -1,6 +1,6 @@
 # openo11y.dev
 
-Welcome to Open O11y! This repository hosts the website files for [openo11y.dev](https://openo11y.dev), an open-source public website with guidance and information on O11y.
+Welcome to Open O11y! This repository hosts the website files for [openo11y.dev](https://openo11y.dev), an open-source public website with guidance and information on observability (o11y).
 
 If you're looking to contribute, please see the [contributing](./docs/contributing.md) documentation.
 
@@ -8,7 +8,7 @@ If you're looking to contribute, please see the [contributing](./docs/contributi
 
 ### MkDocs
 
-The site is fundamentally a `mkdocs` site. You can serve the site locally by running
+The site is built using `mkdocs`. You can serve the site locally by running
 
 ```sh
 make install-deps
