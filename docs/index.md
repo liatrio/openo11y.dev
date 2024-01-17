@@ -2,7 +2,7 @@
 
 ---
 
-*To improve, you must observe. Open O11y is one contribution from an internal Technical Advisory Group (TAG) focused on observability at [Liatrio](liatrio.com); geared towards this singular north star; enabling observability everywhere*
+*To improve, you must observe. Developed by an Observability Technical Advisory Group (TAG) at [Liatrio](https://www.liatrio.com/), Open O11y is a set of documentation, references, and guidance focused on observability.  Open O11y is guided by a singular north star, enabling observability everywhere.*
 
 ---
 
@@ -30,7 +30,7 @@ With that in mind, our goal is to help enable everyone in the industry observe t
 Here's some things you'll find through Open O11y that help achieve this goal:
 
 - Contributions to Open Source communities focused on O11y
-  - For example: [Open Telemetry](opentelemetry.io)
+  - For example: [Open Telemetry](https://opentelemetry.io/)
 - Open-source automations published to get organizations and teams started quickly
   - For example: An observability stack deployable in AWS
   - Guidance on how to use those automations & scale

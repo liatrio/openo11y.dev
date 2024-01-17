@@ -31,12 +31,25 @@ theme:
     - navigation.top
     - toc.follow
 
+extra_javascript:
+  - javascripts/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
 markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+        - name: math
+          class: arithmatex
+          format:
+            !!python/object/apply:pymdownx.arithmatex.arithmatex_fenced_format {
+              which: generic,
+            }
   - footnotes
 
 extra_css:
@@ -56,9 +69,9 @@ nav:
           - "Leading Inidicators": "./guidance/metrics/leading-delivery-indicators.md"
           - "DevEx & Platform": "./guidance/metrics/devex-platform.md"
           - "Satisfaction & Well-Being": "./guidance/metrics/satisfaction-well-being.md"
-  - "O11y Quick Start Platform":
-      - "Overview": "./platform/README.md"
-      - "Architecture": "./platform/architecture.md"
-      - "Recommended Implementations":
-          - "AWS": "./platform/aws.md"
+  # - "O11y Quick Start Platform":
+  #     - "Overview": "./platform/README.md"
+  #     - "Architecture": "./platform/architecture.md"
+  #     - "Recommended Implementations":
+  #         - "AWS": "./platform/aws.md"
   - "Contributing": "./CONTRIBUTING.md"
