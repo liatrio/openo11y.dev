@@ -2,7 +2,7 @@
 
 ---
 
-*To improve, you must observe. Developed by an Observability Technical Advisory Group (TAG)  at [Liatrio](https://www.liatrio.com/), Open O11y is a set of documentation, references, and guidance focused on observability ; Guided by a singular north star; Enabling observability everywhere*
+*To improve, you must observe. Developed by an Observability Technical Advisory Group (TAG) at [Liatrio](https://www.liatrio.com/), Open O11y is a set of documentation, references, and guidance focused on observability.  Open O11y is guided by a singular north star, enabling observability everywhere.*
 
 ---
 
