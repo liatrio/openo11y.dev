@@ -2,7 +2,10 @@
 name = "openo11y.dev"
 version = "0.1.0"
 description = "Openly Enabling O11y Everywhere"
-authors = ["Adriel Perkins <adrielp@liatrio.com>"]
+authors = [
+  "Adriel Perkins <adrielp@liatrio.com>",
+  "Alex Ramsay <alex.ramsay@liatrio.com>",
+]
 license = "Apache-2.0"
 readme = "README.md"
 

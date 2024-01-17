@@ -56,9 +56,9 @@ nav:
           - "Leading Inidicators": "./guidance/metrics/leading-delivery-indicators.md"
           - "DevEx & Platform": "./guidance/metrics/devex-platform.md"
           - "Satisfaction & Well-Being": "./guidance/metrics/satisfaction-well-being.md"
-  - "O11y Quick Start Platform":
-      - "Overview": "./platform/README.md"
-      - "Architecture": "./platform/architecture.md"
-      - "Recommended Implementations":
-          - "AWS": "./platform/aws.md"
+  # - "O11y Quick Start Platform":
+  #     - "Overview": "./platform/README.md"
+  #     - "Architecture": "./platform/architecture.md"
+  #     - "Recommended Implementations":
+  #         - "AWS": "./platform/aws.md"
   - "Contributing": "./CONTRIBUTING.md"
