@@ -1,10 +1,10 @@
 # Observing Human Systems
 
 Many of us typically think of Observability in the context of observing a system of
-software (e.g. a collection of microservices that form a single product). But some of the
-advice provided by Open O11y describes how to observe a system of humans like a
-development organization. This is a much more sensitive activity. Open O11y offers these
-guiding principles to observing human systems ethically.
+software (e.g. a collection of microservices that form a single product). Some of the
+advice provided herein describes how to observe a human system like teams or development
+organizations. This is a much more sensitive activity. Open O11y offers these guiding
+principles to observing human systems ethically.
 
 ## Building A Culture of Safely Being Observed
 
