@@ -60,18 +60,20 @@ repo_url: https://github.com/liatrio/openo11y.dev
 
 nav:
   - "Welcome to Open O11y": "index.md"
-  - "Guidance":
-      - "Why Metrics Matter": "./guidance/why-metrics-matter.md"
-      - "Observing Human Systems": "./guidance/observing-human-systems.md"
+  - "Why Metrics Matter": "./why-metrics-matter.md"
+  - "Human Systems":
+      - "Observing Human Systems": "./human-systems/observing-human-systems.md"
       - "Delivery Metrics":
-          - "Overview": "./guidance/metrics/overview.md"
-          - "Lagging Inidicators": "./guidance/metrics/lagging-delivery-indicators.md"
-          - "Leading Inidicators": "./guidance/metrics/leading-delivery-indicators.md"
-          - "DevEx & Platform": "./guidance/metrics/devex-platform.md"
-          - "Satisfaction & Well-Being": "./guidance/metrics/satisfaction-well-being.md"
+          - "Overview": "./human-systems/delivery-metrics/overview.md"
+          - "Lagging Inidicators": "./human-systems/delivery-metrics/lagging-delivery-indicators.md"
+          - "Leading Inidicators": "./human-systems/delivery-metrics/leading-delivery-indicators.md"
+          - "DevEx & Platform": "./human-systems/delivery-metrics/devex-platform.md"
+          - "Satisfaction & Well-Being": "./human-systems/delivery-metrics/satisfaction-well-being.md"
+  - "Business Systems": "./business-systems.md"
   # - "O11y Quick Start Platform":
   #     - "Overview": "./platform/README.md"
   #     - "Architecture": "./platform/architecture.md"
   #     - "Recommended Implementations":
   #         - "AWS": "./platform/aws.md"
+  - "External Resources": "./useful-resources.md"
   - "Contributing": "./contributing.md"
