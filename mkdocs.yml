@@ -62,7 +62,7 @@ nav:
   - "Welcome to Open O11y": "index.md"
   - "Guidance":
       - "Why Metrics Matter": "./guidance/why-metrics-matter.md"
-      # - "Who Should Use Metrics": "./guidance/using-metrics-effectively.md"
+      - "Observing Human Systems": "./guidance/observing-human-systems.md"
       - "Delivery Metrics":
           - "Overview": "./guidance/metrics/overview.md"
           - "Lagging Inidicators": "./guidance/metrics/lagging-delivery-indicators.md"
