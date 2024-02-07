@@ -31,7 +31,7 @@ Open O11y is an [open source project](https://github.com/liatrio/openo11y.dev/) 
 is to enable everyone to observe and improve their systems. Open O11y achieves this goal
 by:
 
-- Participating in open source communities focused on O11y
+- Participating in open source communities focused on o11y
     - Contributions to [Open Telemetry](https://opentelemetry.io/)
     - Leading a [Working Group](https://github.com/open-telemetry/community/blob/main/projects/ci-cd.md)
       to define Semantic Conventions for observing CI/CD pipelines
