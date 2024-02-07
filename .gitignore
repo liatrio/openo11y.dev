@@ -32,9 +32,6 @@ MANIFEST
 *.manifest
 *.spec
 
-# Poetry
-poetry.lock
-
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
