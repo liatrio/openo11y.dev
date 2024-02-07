@@ -2,46 +2,42 @@
 
 ---
 
-*To improve, you must observe. Developed by an Observability Technical Advisory Group (TAG) at [Liatrio](https://www.liatrio.com/), Open O11y is a set of documentation, references, and guidance focused on observability.  Open O11y is guided by a singular north star, enabling observability everywhere.*
+*To improve, you must observe. Developed by an Observability Technical Advisory Group
+(TAG) at [Liatrio](https://www.liatrio.com/), Open O11y is a set of documentation,
+references, and guidance focused on observability. Open O11y is guided by a singular
+north star, enabling observability everywhere.*
 
 ---
 
 ## What is o11y?
 
-> **o11y** - shorthand for *observability*[^1]  which is the ability to measure the
+> **o11y** - shorthand for *observability*[^1] which is the ability to measure the
 > internal states of a system by examining its outputs[^2].
 
 O11y empowers organizations to easily and effectively observe key data at scale;
 enabling decision making in order to improve company culture, security, effectiveness,
 growth, and ultimate business success.
 
-Just as it's important to define what o11y is, it's also important to define a system.
-
 > **system** - a group of interacting, interrelated, or interdependent elements
 > forming a complex whole
 
-O11y is focused on systems, and systems can be your microservices, or your people,
-your teams, your company and organization.
+O11y is focused on systems. Systems can be comprised of software, such as a system
+microservices. Systems can also be comprised of people, such as a team, a group of
+teams, or an entire organization.
 
-With that in mind, our goal is to help enable everyone in the industry observe their systems.
+## What is Open O11y?
 
-## How do we do this?
+Open O11y is an [open source project](https://github.com/liatrio/openo11y.dev/) whose goal
+is to enable everyone to observe and improve their systems. Open O11y achieves this goal
+by:
 
-Here's some things you'll find through Open O11y that help achieve this goal:
-
-- Contributions to Open Source communities focused on O11y
-  - For example: [Open Telemetry](https://opentelemetry.io/)
-- Open-source automations published to get organizations and teams started quickly
-  - For example: An observability stack deployable in AWS
-  - Guidance on how to use those automations & scale
-- Guidance on how to leverage metrics and what to observe related to:
-  - team effectiveness
-  - joy
-  - security
-
-Just like security, o11y is a team sport. We've helped many clients implement
-and improve their observability practices, and we want to bring those contributions
-to everyone.
+- Participating in open source communities focused on O11y
+    - Contributions to [Open Telemetry](https://opentelemetry.io/)
+    - Leading a [Working Group](https://github.com/open-telemetry/community/blob/main/projects/ci-cd.md)
+      to define Semantic Conventions for observing CI/CD pipelines
+- Publishing open-source automations and tools to help organizations start observing their
+  systems quickly
+- Offering guidance here on [Open O11y](.)
 
 [^1]: [numeronym](https://en.wikipedia.org/wiki/Numeronym)
 
