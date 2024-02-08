@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://peno11y.dev/sitemap.xml
+Sitemap: https://openo11y.dev/sitemap.xml
