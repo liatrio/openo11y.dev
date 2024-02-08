@@ -14,7 +14,10 @@ serve:
 	poetry run mkdocs serve
 
 .PHONY: install-deps
-install-deps:
+install-deps: install-main-deps poetry-install
+
+.PHONY: install-main-deps
+install-main-deps:
 	brew bundle --force
 
 .PHONY: backstage
