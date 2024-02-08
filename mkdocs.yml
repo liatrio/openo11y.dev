@@ -4,6 +4,7 @@ theme:
   name: material
   custom_dir: docs/overrides
   logo: img/logo_o11y_black.png
+  favicon: img/favicon_o11y.svg
   icon:
     repo: fontawesome/brands/github
     edit: material/pencil
@@ -57,6 +58,7 @@ extra_css:
   - "styles/table.css"
 
 repo_url: https://github.com/liatrio/openo11y.dev
+site_url: https://openo11y.dev
 
 nav:
   - "Welcome to Open O11y": "index.md"

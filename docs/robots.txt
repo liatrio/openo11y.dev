@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://peno11y.dev/sitemap.xml
