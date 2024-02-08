@@ -2,10 +2,9 @@
 
 ---
 
-*To improve, you must observe. Started by an Observability Technical Advisory Group
-(TAG) at [Liatrio](https://www.liatrio.com/), OpenO11y is a set of documentation,
-reference architectures, and guidance focused on observability. OpenO11y is focused
-on enabling wider Observability adoption through its written contributions.*
+*To improve, you must observe. OpenO11y is a set of documentation, reference
+architectures, and guidance focused on observability. OpenO11y is focused on enabling
+wider Observability adoption through its written contributions.*
 
 ---
 
@@ -14,29 +13,23 @@ on enabling wider Observability adoption through its written contributions.*
 > **o11y** - shorthand for *observability*[^1] which is the ability to measure the
 > internal states of a system by examining its outputs[^2].
 
-O11y empowers organizations to easily and effectively observe key data at scale;
-enabling decision making in order to improve company culture, security, effectiveness,
-growth, and ultimate business success.
+O11y empowers organizations to easily and effectively observe key data at scale; Enabling
+decision making in order to improve the organization's culture, security, effectiveness,
+growth, and ultimate success.
+
+> **system** - a group of interacting, interrelated, or interdependent elements
+> forming a complex whole
 
 O11y is focused on systems. Systems can be comprised of software, such as a system of
 microservices. Systems can also be comprised of people, such as a team, a group of
 teams, or an entire organization.
 
-> **system** - a group of interacting, interrelated, or interdependent elements
-> forming a complex whole
+## Goals and Methods
 
-## What is OpenO11y?
-
-OpenO11y is an [open source project](https://github.com/liatrio/openo11y.dev) whose goal
-is to enable everyone to observe and improve their systems. OpenO11y achieves this goal
-by:
-
-- Participating in open source communities focused on o11y
-    - Contributions to [Open Telemetry](https://opentelemetry.io/)
-    - Leading a [Working Group](https://github.com/open-telemetry/community/blob/main/projects/ci-cd.md)
-      to define Semantic Conventions for observing CI/CD pipelines
-- Publishing open-source automations and tools to help organizations start observing their systems quickly
-- Offering guidance here on [OpenO11y](.)
+As an [open source project](https://github.com/liatrio/openo11y.dev), OpenO11y's goal is
+to enable everyone to observe and improve their systems. OpenO11y achieves this goal by
+offering technical guidance, social guidance, reference architectures (coming soon!),
+tooling recommendations, and demos.
 
 [^1]: [numeronym](https://en.wikipedia.org/wiki/Numeronym)
 
