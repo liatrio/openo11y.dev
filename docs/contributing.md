@@ -1,13 +1,13 @@
-# Contributing to open o11y
+# Contributing to OpenO11y
 
-Anyone is welcome to contribute to open o11y, and there's a few major
+Anyone is welcome to contribute to OpenO11y, and there's a few major
 aspects of this project to which one can contribute.
 This guide will help you understand how our project works and how you can contribute effectively.
 If you have any questions that aren't answered in this guide, please feel free to reach out on our [Slack Team](https://liatrio.slack.com/archives/C04KGSFF407).
 
 ## Table of Contents
 
-- [Contributing to open o11y](#contributing-to-open-o11y)
+- [Contributing to OpenO11y](#contributing-to-open-o11y)
   - [Table of Contents](#table-of-contents)
   - [Getting Started](#getting-started)
   - [Github Repositories](#github-repositories)
@@ -25,7 +25,7 @@ Details can be found in our [README.md](https://github.com/liatrio/openo11y.dev/
 ## Github Repositories
 
 The following is a list of repositories that relate or are actively being developed as part
-of **open o11y**.
+of **OpenO11y**.
 
 - [o11y-platform-deployment](https://github.com/liatrio/o11y-platform-deployment) #[branch] Terragrunt deployment repo for the o11y platform
 - [aws-managed-service-module](https://github.com/liatrio/aws-managed-services) #[branch] TF module for managed services in AWS for o11y

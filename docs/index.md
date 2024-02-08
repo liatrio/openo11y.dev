@@ -1,10 +1,10 @@
-# Open O11y
+# OpenO11y
 
 ---
 
 *To improve, you must observe. Developed by an Observability Technical Advisory Group
-(TAG) at [Liatrio](https://www.liatrio.com/), Open O11y is a set of documentation,
-references, and guidance focused on observability. Open O11y is guided by a singular
+(TAG) at [Liatrio](https://www.liatrio.com/), OpenO11y is a set of documentation,
+references, and guidance focused on observability. OpenO11y is guided by a singular
 north star, enabling observability everywhere.*
 
 ---
@@ -25,10 +25,10 @@ O11y is focused on systems. Systems can be comprised of software, such as a syst
 microservices. Systems can also be comprised of people, such as a team, a group of
 teams, or an entire organization.
 
-## What is Open O11y?
+## What is OpenO11y?
 
-Open O11y is an [open source project](https://github.com/liatrio/openo11y.dev/) whose goal
-is to enable everyone to observe and improve their systems. Open O11y achieves this goal
+OpenO11y is an [open source project](https://github.com/liatrio/openo11y.dev/) whose goal
+is to enable everyone to observe and improve their systems. OpenO11y achieves this goal
 by:
 
 - Participating in open source communities focused on o11y
@@ -37,7 +37,7 @@ by:
       to define Semantic Conventions for observing CI/CD pipelines
 - Publishing open-source automations and tools to help organizations start observing their
   systems quickly
-- Offering guidance here on [Open O11y](.)
+- Offering guidance here on [OpenO11y](.)
 
 [^1]: [numeronym](https://en.wikipedia.org/wiki/Numeronym)
 
