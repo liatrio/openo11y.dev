@@ -1,20 +1,30 @@
 # openo11y.dev
 
-Welcome to Open O11y! This repository hosts the website files for [openo11y.dev](https://openo11y.dev), an open-source public website with guidance and information on observability (o11y).
+Welcome to OpenO11y! This repository hosts the website files for [openo11y.dev](https://openo11y.dev), an open-source public website dedicated to providing guidance and resources on observability (o11y).
 
 If you're looking to contribute, please see the [contributing](./docs/contributing.md) documentation.
 
 ## Local Development
 
-### MkDocs
+### Tooling
 
-The site is built using `mkdocs`. You can serve the site locally by running
+The following tools will need to be installed:
 
-```sh
-make install-deps
-make build
-make serve
-```
+- [Make](https://www.gnu.org/software/make/): A build automation tool.
+- [Python](https://www.python.org/downloads/): The programming language used for development.
+- [Poetry](https://python-poetry.org/docs/#installation): A tool for dependency management in Python.
+
+Note: OSX users with [Homebrew](https://brew.sh/) installed can install Poetry by running the command `make brew`.
+
+### Working on Documentation
+
+Our site is built using [mkdocs](https://www.mkdocs.org/), a static site generator optimized for project documentation. It features
+hot reloading, allowing immediate preview of changes, and can compile documentation into static assets for deployment.
+
+To work on the documentation:
+
+- Use `make serve` to start a local server. Your changes can be viewed in real-time at http://127.0.0.1:8000.
+- To build the documentation, run `make build`. This command generates static files and stores them in the `./site` directory.
 
 ## Contributing
 
