@@ -16,24 +16,19 @@ The following repositories relate to or are actively developed as part of
 - [openo11y.dev](https://github.com/liatrio/openo11y.dev) The source for this
   site
 - [aws-managed-service-module](https://github.com/liatrio/aws-managed-services)
-  TF module for managed services in AWS for o11y
+  TF module for managed services in AWS for observability
 - [liatrio-otel-collector](https://github.com/liatrio/liatrio-otel-collector)
   Liatrio's distribution of the OTEL Collector
-- [opentelemetry-collector-contrib](https://github.com/open-telemetry/opentelemetry-collector-contrib)
-  the repo we fork and contribute to on the OTEL project
-- [oteps](https://github.com/open-telemetry/oteps) the repo we fork for
-  enhancement proposals contributing back to the community via OTEL
+- [liatrio/opentelemetry-demo](https://github.com/liatrio/opentelemetry-demo) A
+  fork from OpenTelemetry that demos the GitProviderReceiver
+- [terraform-grafana-config-module](https://github.com/liatrio/terraform-grafana-config-module)
+  A terraform module for deploying Grafana to AWS
 
 Anyone is welcome to contribute to any of these projects. These projects
 generally expect that contributions start with a Github issue where proposed
 changes can be discussed and planned openly. However, each project is
 independent and contributors should refer to the documentation within each
 project for detailed instructions.
-
-## Github Issues
-
-All of our projects generally expect that contributions start with a Github
-issue where proposed changes can be discussed and planned openly.
 
 ## Open Source Projects
 

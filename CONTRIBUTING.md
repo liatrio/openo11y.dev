@@ -19,6 +19,6 @@ change.
 
 ## Commits, Branches, and Pull Requests
 
-All contributions should be committed to a branch and reviewed with a pull
-request. Forks certainly may be used but are not required. Commits and pull
-requests should follow [ConventionalCommits](https://www.conventionalcommits.org/en/v1.0.0/) guidelines.
+All contributions should be made in a fork, committed to a branch, and reviewed
+with a pull request. Commits and pull requests should follow [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+guidelines.
