@@ -1,5 +1,3 @@
 MD007:
   # Spaces for indent
   indent: 4
-MD013:
-  line_length: 90
