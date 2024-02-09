@@ -17,11 +17,11 @@ OpenO11y.
 - [opentelemetry-collector](https://github.com/open-telemetry/opentelemetry-collector)
 - [liatrio-otel-collector](https://github.com/liatrio/liatrio-otel-collector):
   Liatrio's distribution of the OTEL Collector
-- [liatrio/opentelemetry-demo](https://github.com/liatrio/opentelemetry-demo) A
+- [liatrio/opentelemetry-demo](https://github.com/liatrio/opentelemetry-demo): A
   fork from OpenTelemetry that demos the GitProviderReceiver
-- [aws-managed-service-module](https://github.com/liatrio/aws-managed-services)
+- [aws-managed-service-module](https://github.com/liatrio/aws-managed-services):
   TF module for managed services in AWS for observability
-- [terraform-grafana-config-module](https://github.com/liatrio/terraform-grafana-config-module)
+- [terraform-grafana-config-module](https://github.com/liatrio/terraform-grafana-config-module):
   A terraform module for deploying Grafana to AWS
 
 Note that this list represents independent and varied open source projects. If
