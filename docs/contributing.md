@@ -11,8 +11,8 @@ We look forward to your contributions!
 
 OpenO11y relies heavily on open source projects. If you find a bug or feature
 that you think should be implemented in one of these projects, consider
-contributing there as well. The following repositories directly relate to
-OpenO11y.
+contributing there as well. The following repositories are frequently used and
+referenced by OpenO11y.
 
 - [opentelemetry-collector](https://github.com/open-telemetry/opentelemetry-collector)
 - [liatrio-otel-collector](https://github.com/liatrio/liatrio-otel-collector):
