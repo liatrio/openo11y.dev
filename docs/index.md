@@ -14,7 +14,7 @@ wider Observability adoption through its written contributions.*
 > internal states of a system by examining its outputs[^2].
 
 Observability empowers organizations to easily and effectively observe key data at scale;
-Enabling decision making in order to improve the organization's culture, security,
+enabling decision making in order to improve the organization's culture, security,
 effectiveness, growth, and ultimate success.
 
 > **system** - a group of interacting, interrelated, or interdependent elements
