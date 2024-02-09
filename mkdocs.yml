@@ -61,7 +61,7 @@ repo_url: https://github.com/liatrio/openo11y.dev
 site_url: https://openo11y.dev
 
 nav:
-  - "Welcome to Open O11y": "index.md"
+  - "Welcome to OpenO11y": "index.md"
   - "Why Metrics Matter": "./why-metrics-matter.md"
   - "Guidance":
     - "Human Systems":

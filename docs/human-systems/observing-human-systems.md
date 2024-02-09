@@ -2,7 +2,7 @@
 
 ## RFC 2119
 
-Open O11y has very strong opinions on how to observe human systems ethically. While
+OpenO11y has very strong opinions on how to observe human systems ethically. While
 acknowledging it is social advice, this guidance is considered a specification. Thus, we
 use certain keywords in accordance with [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
 
@@ -11,7 +11,7 @@ use certain keywords in accordance with [RFC 2119](https://www.ietf.org/rfc/rfc2
 Many of us typically think of Observability in the context of observing a system of
 software (e.g. a collection of microservices that form a single product). Some of the
 advice provided herein describes how to observe human systems like teams or development
-organizations. This is a much more sensitive activity. Open O11y offers these guiding
+organizations. This is a much more sensitive activity. OpenO11y offers these guiding
 principles to observing human systems ethically.
 
 1. When observing human systems, individuals ***MUST*** feel and be safe while being
@@ -23,7 +23,7 @@ principles to observing human systems ethically.
 4. The gathering and use of telemetry ***MUST*** be excessively transparent[^1] to all
   human systems impacted by the telemetry.
 5. Human evaluations and compensation ***MUST NOT*** rely on the telemetry data listed
-  within Open o11y.
+  within OpenO11y.
 6. When observing human systems, observers ***MUST*** continuously reevaluate the health
   and safety of the people and culture.
 7. Secondary contributors ***MUST NOT*** use telemetry to measure the teams they support
@@ -100,7 +100,7 @@ engineering principles.
 
 ### Secondary Contributors
 
-Open O11y uses this term to describe roles that exist to organize, improve, or facilitate
+OpenO11y uses this term to describe roles that exist to organize, improve, or facilitate
 the work of others. In the world of software development, these roles commonly include,
 but are not limited to, SCRUM Masters, Project Managers, Product Owners, and Management.
 Secondary contributors ***SHOULD NOT*** use telemetry to observe the teams they support.
