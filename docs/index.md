@@ -24,13 +24,14 @@ Observability is focused on systems. Systems can be comprised of software, such 
 system of microservices. However, systems can also have other compositions such as people
 forming a team, a group of teams, an entire organization, etc.
 
-## Goals and Methods
+## Mission
 
-As an [open source project](https://github.com/liatrio/openo11y.dev), OpenO11y's goal is
-to enable everyone to observe and improve their systems. OpenO11y achieves this goal by
-offering technical guidance, social guidance, reference architectures (coming soon!),
-tooling recommendations, and demos.
+As an [open source project](https://github.com/liatrio/openo11y.dev), OpenO11y's mission
+is to enable everyone to observe and improve their systems by offering socio-technical[^3]
+guidance, reference architectures (coming soon!), tooling recommendations, and demos.
 
 [^1]: [numeronym](https://en.wikipedia.org/wiki/Numeronym)
 
 [^2]: [What is Observability - Splunk](https://www.splunk.com/en_us/data-insider/what-is-observability.html)
+
+[^3]: [Socio-Technical Theory](https://open.ncl.ac.uk/theories/9/socio-technical-theory/)
