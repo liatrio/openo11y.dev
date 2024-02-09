@@ -21,8 +21,8 @@ growth, and ultimate success.
 > forming a complex whole
 
 Observability is focused on systems. Systems can be comprised of software, such as a
-system of microservices. Systems can also be comprised of people, such as a team, a group
-of teams, or an entire organization.
+system of microservices. However, systems can also have other compositions such as people
+forming a team, a group of teams, an entire organization, etc.
 
 ## Goals and Methods
 
