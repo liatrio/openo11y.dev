@@ -6,7 +6,7 @@ If you're looking to contribute, please see the [contributing](./docs/contributi
 
 ## Local Development
 
-### Tooling
+### Prerequisites
 
 The following tools will need to be installed:
 
