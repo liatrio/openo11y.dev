@@ -20,9 +20,9 @@ growth, and ultimate success.
 > **system** - a group of interacting, interrelated, or interdependent elements
 > forming a complex whole
 
-O11y is focused on systems. Systems can be comprised of software, such as a system of
-microservices. Systems can also be comprised of people, such as a team, a group of
-teams, or an entire organization.
+Observability is focused on systems. Systems can be comprised of software, such as a
+system of microservices. Systems can also be comprised of people, such as a team, a group
+of teams, or an entire organization.
 
 ## Goals and Methods
 
