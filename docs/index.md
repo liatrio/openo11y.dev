@@ -13,9 +13,9 @@ wider Observability adoption through its written contributions.*
 > **o11y** - shorthand for *observability*[^1] which is the ability to measure the
 > internal states of a system by examining its outputs[^2].
 
-O11y empowers organizations to easily and effectively observe key data at scale; Enabling
-decision making in order to improve the organization's culture, security, effectiveness,
-growth, and ultimate success.
+Observability empowers organizations to easily and effectively observe key data at scale;
+Enabling decision making in order to improve the organization's culture, security,
+effectiveness, growth, and ultimate success.
 
 > **system** - a group of interacting, interrelated, or interdependent elements
 > forming a complex whole
