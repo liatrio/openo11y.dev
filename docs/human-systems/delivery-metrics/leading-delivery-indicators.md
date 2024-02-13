@@ -16,15 +16,25 @@ Number of commits a branch is behind or ahead of main. Hours or days a PR has ex
 
 ## Number of Unique Contributors
 
-Measures the total unique contributors to a repository over the course of its lifetime.
+Measures the total count of unique contributors to a repository over the course
+of its lifetime. An easy way to get this in GitHub or GitLab is to leverage
+the GitProvider receiver within the OpenTelemetry collector. It will count
+the cumalitive number of unique contributors who have made at least one commit
+to a given respository. This count is a point-in-time count of all contributors
+from the beginning to the current time.
 
-### How to Measure
+Interpreting this metric is very contextual. Measuring an OpenSource Library
+that is used within production code may require a different number of contributors
+than a one-off POC of an internal repository.
 
-Count the cumulative number of unique contributors who have made at least one commit to the repository. This includes both current and past contributors.
+The below chart takes a view based on a couple common scenarios.
 
-### Example
-
-If a repository has received contributions from three distinct individuals over its history, the unique contributor count would be 3.
+|  Impact  | Risky  | Hesitant | Desirable |
+|:--------:|--------|----------|-----------|
+| Critical | 1 - 20 | 21 - 50  | 50+       |
+|   High   | 1 - 10 | 11 - 25  | 26+       |
+| Moderate | 1 - 5  | 6 - 20   | 21+       |
+| Low      | 1 - 3  | 4 - 10   | 11+       |
 
 ### How to interpret
 
