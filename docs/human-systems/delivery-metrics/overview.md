@@ -7,7 +7,7 @@ effectiveness of delivery teams.
 
 These metrics should be observed as a set; focusing on one metric inherently
 diminishes the value of others. Similarly, these metrics should not be the sole
-mechanism used to evaluate teams. Instead, they are a mechanism to provide
+mechanism used for team self-evaluation. Instead, they are a mechanism to provide
 qualitative and quantitative
 [signals](https://github.com/cncf/tag-observability/blob/main/whitepaper.md#observability-signals)
 to teams that measure their delivery, culture, and joy against an opinionated
