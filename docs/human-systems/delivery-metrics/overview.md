@@ -5,7 +5,7 @@ that interacts with a git repository. These teams all participate in delivery.
 The following pages describe various metrics that can be used to observe the
 effectiveness of delivery teams.
 
-These metrics should be observed as a set; Focusing on one metric inherently
+These metrics should be observed as a set; focusing on one metric inherently
 diminishes the value of others. Similarly, these metrics should not be the sole
 mechanism used to evaluate teams. Instead, they are a mechanism to provide
 qualitative and quantitative
