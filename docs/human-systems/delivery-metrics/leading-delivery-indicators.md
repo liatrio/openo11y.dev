@@ -31,8 +31,8 @@ The below chart takes a view based on a couple common scenarios.
 
 |  Impact  | Risky  | Hesitant | Desirable |
 |:--------:|--------|----------|-----------|
-| Critical | 1 - 20 | 21 - 50  | 50+       |
-|   High   | 1 - 10 | 11 - 25  | 26+       |
+| Critical | 1 - 20 | 21 - 50  | 51+       |
+| High     | 1 - 10 | 11 - 25  | 26+       |
 | Moderate | 1 - 5  | 6 - 20   | 21+       |
 | Low      | 1 - 3  | 4 - 10   | 11+       |
 
