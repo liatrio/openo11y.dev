@@ -1,18 +1,34 @@
 # Engineering Metrics
 
-These metrics provide signals as to how teams are adhering to the adoption of the engineering practices and principals. Complimentary to the DORA metrics, these metrics are designed to be leading indicators of how teams are delivering software.
+These metrics provide signals as to how teams are adhering to the adoption of
+the engineering practices and principals. Complimentary to the
+[DORA metrics][dora], these metrics are designed to be leading
+indicators of how teams are delivering software.
+
+Many of these metrics can be gathered using an OpenTelemetry collector
+configured to run a [GitProvider receiver][gitprovider].
+
+[dora]: https://dora.dev/
+[gitprovider]: https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/receiver/gitproviderreceiver
 
 ## Branch & PR Age
 
-Measures the lifespan and efficiency of code integration in repos.
+Measures the lifespan and efficiency of code integration in repos. Both, `branch
+age` and `pull request` age are measured as a number of minutes, hours, or days.
+Note that these metrics should be ignored for a repo's long-lived branches, such
+as `main`.
 
-### How to Measure
+Longer-lived branches introduce risk and maintenance overhead. As time advances,
+downstream branches diverge from their upstream counterparts. Thus,
+these branches are more likely to experience merge conflicts and introduce
+unexpected code changes.
 
-Calculated by the overall average age of branches & pull requests across each repo
+Long-lived pull requests can result from overly large scope or complexity of
+changes. It can also indicate a need for or lack of pair programming.
 
-### Example
-
-Number of commits a branch is behind or ahead of main. Hours or days a PR has existed before merging into main.
+Generally, branch and pull request age metrics should be minimized. This
+promotes small batch development by frequently creating branches, opening pull
+requests, and merging/closing them quickly.
 
 ## Number of Unique Contributors
 
@@ -36,57 +52,84 @@ The below chart takes a view based on a couple common scenarios.
 | Moderate | 1 - 5  | 6 - 20   | 21+       |
 | Low      | 1 - 3  | 4 - 10   | 11+       |
 
-### How to interpret
-
-Analyzing the distribution of contributions across repositories helps identify projects that may rely heavily on a limited number of contributors, potentially uncovering knowledge silos and collaboration bottlenecks. A diverse contributor base is often a hallmark of a healthy, sustainable project, as it reduces the risk associated with developer turnover and encourages a broader engagement with the project's goals and maintenance.
-
-Observe how this count changes over time. Any project with less than 3 contributors is a considerable risk.
-
 ## Open Branches
 
 Measures the number of active and open branches in a repo, excluding the trunk.
+The count is a point-in-time total of all open branches in the repository. If
+the `liatrio-otel-collector` repo has a main branch and 5 feature branches, then
+the count is 5.
 
-### How to Measure
-
-Count the number of open branches in a repo.
-
-### Example
-
-If the `liatrio-otel-collector` repo has a main branch and 5 feature branches, then the count is 5.
+Ideally, this metric will always be low. A higher number of open branches
+creates a higher level of cognitive overhead and maintenance for repo maintainers.
+However, this is opposed by the scale and activity of a repo. I.e. a very active
+project may have dozens of concurrent, active branches and may not be a
+indicative of a problem.
 
 ## Code Coverage
 
-Measures the percentage of code statements exercised during unit test runs. Assesses the amount of code logic invoked during unit testing.
+Measures the percentage of code statements exercised during unit test runs.
+Assesses the amount of code logic invoked during unit testing. 3rd party tooling
+such as [CodeCov][codecov], which runs in your automated CI/CD builds. If the
+code we're testing has 100 lines of code and 50 of those are executed by unit
+test code, then the code coverage percentage of this software is 50%.
 
+[codecov]: https://app.codecov.io/gh/open-telemetry/opentelemetry-collector-contrib
 
-### How to Measure
-
-3rd party tooling which runs in your automated CI/CD builds
-
-### Example
-
-If the code we're testing has 100 lines of code and 50 of those are executed by unit test code, then the code coverage percentage of this software is 50%
+We recommend having code coverage for any product which is going to production.
 
 ## Code Quality
 
-Measures the quality of code across three tenets: Security (Vulnerabilities), Reliability (Bugs), and Maintainability (Code Smells).
-
-### How to Measure
-
-3rd party tooling which runs in your automated CI/CD builds
-
-### Example
-
-One aspect of code quality is reusability, which can be measured by counting the number of interdependencies. The more tightly-coupled the code is with surrounding code and dependencies, the less reusable the code tends to be.
+Measures the quality of code across three tenets: Security (Vulnerabilities),
+Reliability (Bugs), and Maintainability (Code Smells). Using 3rd party tooling
+like Coverity, etc. which runs in your automated CI/CD builds. One aspect of
+code quality is reusability, which can be measured by counting the number of
+interdependencies. The more tightly-coupled the code is with surrounding code
+and dependencies, the less reusable the code tends to be.
 
 ## Story Cycle Time
 
-Measures the time between starting a work item (In Progress) and completing a work item (Done). Promote small batch delivery by striving for smaller cycle times.
+Measures the time between starting a work item (In Progress) and completing a
+work item (Done). We should promote small batch delivery by striving for smaller cycle
+times. Calculated as the average time that stories remain active. If a 4-person
+team completes 32 stories in a month with 22 work days, then the cycle time is
+`(4 * 22) / 32` or 2.75 days.
 
-### How to Measure
+## Code Change Metrics
 
-Calculated as the average time that stories remain active.
+Measures code line changes for additions and deletions. Analyzing lines added
+and removed in merge requests offers more than just numerical data; it reveals
+critical insights into team productivity, codebase maturity, and the balance
+between feature development and maintenance.
 
-### Example
+## Repositories in Organization
 
-If a 4-person team completes 32 stories in a month with 22 work days, then the cycle time is `(4 * 22) / 32` or 2.75 days.
+Measuring the point-in-time number of repositories across the organization
+illuminates growth trends, which can signal increased team efficiency,
+exploration of new technologies, or expanded R&D efforts. Conversely, a high
+count may also indicate the presence of legacy projects that could be pruned to
+reduce cognitive overhead.
+
+## PR Approval Time
+
+Measures the amount of time it took a pull request to go from open to approved.
+This metric can highlight a PR's potential complexity to review. An overly
+complex PR may indicate someone working in a silo, or something that may have
+mixed content which would be better served with smaller, easier to review pull request.
+
+## Point-in-Time Repository Metrics
+
+Other metrics we find useful to gather across a repository include the number of
+open pull requests, and number of merged for any given repository.
+
+A high number of open PRs can indicate active development and engagement within
+the project. It can suggest that many features or fixes are in the pipeline,
+awaiting review or completion. Conversely, a consistently high number of open
+PRs might point to bottlenecks in the review process. It could signal that the
+team is overwhelmed, reviews are taking too long, or there's a lack of consensus
+on how to proceed.
+
+The number of merged PRs is a direct indicator of the project's development
+pace. A steady flow of merged PRs suggests a healthy, productive development
+process. The frequency and volume of merged PRs can also reflect on team
+collaboration and efficiency. A project with frequent merges likely has good
+communication and collaboration among contributors.
