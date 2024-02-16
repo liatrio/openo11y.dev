@@ -6,5 +6,5 @@ mission and vision. Key Results are specific, measurable, and quantifiable, prov
 clear path towards achieving the Objectives. OKRs are regularly reviewed and updated as
 needed, with a strong commitment to achieving them.
 
-- _How to Measure:_ All team members understand the OKRs and how their work contributes to
+___How to Measure:___ All team members understand the OKRs and how their work contributes to
   their achievement. The OKRs are logged in the company's OKR tracker.
