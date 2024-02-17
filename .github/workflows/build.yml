@@ -24,7 +24,7 @@ jobs:
               with:
                 python-version: '3.11'
             - name: setup poetry
-              uses: Gr1N/setup-poetry@v8
+              uses: Gr1N/setup-poetry@v9
 
             - name: install dependencies
               run: make build
