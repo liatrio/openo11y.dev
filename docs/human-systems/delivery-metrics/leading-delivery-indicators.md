@@ -88,11 +88,30 @@ and dependencies, the less reusable the code tends to be.
 
 ## Story Cycle Time
 
-Measures the time between starting a work item (In Progress) and completing a
-work item (Done). We should promote small batch delivery by striving for smaller cycle
-times. Calculated as the average time that stories remain active. If a 4-person
-team completes 32 stories in a month with 22 work days, then the cycle time is
-`(4 * 22) / 32` or 2.75 days.
+Measures the time between starting a work item (changes to In Progress) and
+completing a work item (changes to Done). Calculated as the average time that
+stories remain active. If a 4-person team completes 32 stories in a month with
+22 work days, then the cycle time is `(4 * 22) / 32` or 2.75 days.
+
+We should promote small batch delivery by striving for smaller cycle times.
+
+A large or growing average cycle time may indicate a issue. Are work items
+blocked regularly? Do work items need to be split into smaller scope portions?
+This may be a good discussion item for team retrospectives.
+
+Some teams use story points to estimate the effort of work items. These teams
+may choose to compare each story's cycle time to its story points. This must be
+done carefully! By design, story points do not represent a portion of time.
+Thus, teams should not review this data for individual stories. Instead, the
+team should only review aggregates of this data.
+
+$$
+\frac{1}{n}
+\left(
+  \sum_{story_0}^{story_n}
+  \frac{points_n}{cycle\,time_n}
+\right)
+$$
 
 ## Code Change Metrics
 
