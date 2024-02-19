@@ -86,32 +86,55 @@ code quality is reusability, which can be measured by counting the number of
 interdependencies. The more tightly-coupled the code is with surrounding code
 and dependencies, the less reusable the code tends to be.
 
-## Story Cycle Time
+## Work Cycle Time
 
-Measures the time between starting a work item (changes to In Progress) and
-completing a work item (changes to Done). Calculated as the average time that
-stories remain active. If a 4-person team completes 32 stories in a month with
-22 work days, then the cycle time is `(4 * 22) / 32` or 2.75 days.
+Work cycle time calculates the time between a work item being started and
+finished. For each work item, calculate the cycle time as:
 
-We should promote small batch delivery by striving for smaller cycle times.
+$$
+t = t_{finish} - t_{start}
+$$
 
-A large or growing average cycle time may indicate a issue. Are work items
-blocked regularly? Do work items need to be split into smaller scope portions?
-This may be a good discussion item for team retrospectives.
+A team can then calculate the average cycle time for work items in a given
+period of time. For example, a team may calculate the following cycle times for
+four work items:
 
-Some teams use story points to estimate the effort of work items. These teams
-may choose to compare each story's cycle time to its story points. This must be
-done carefully! By design, story points do not represent a portion of time.
-Thus, teams should not review this data for individual stories. Instead, the
-team should only review aggregates of this data.
+* $t_0 = 48$ hours
+* $t_1 = 72$ hours
+* $t_2 = 16$ hours
+* $t_3 = 144$ hours
+
+Then, the team can calculate the average as:
 
 $$
 \frac{1}{n}
 \left(
-  \sum_{story_0}^{story_n}
-  \frac{points_n}{cycle\,time_n}
+  \sum_{i=0}^{n}
+  t_i
 \right)
+= \frac{48 + 72 + 16 + 144}{4}
+= 70
+\text{ hours}
 $$
+
+In this example, the team may conclude that their average cycle time is very
+large. As a result, the team agrees to write smaller work items to deliver in
+smaller batches.
+
+Team Retrospective Questions:
+
+* Are work items blocked regularly?
+* Do work items need to be split into smaller scope portions?
+
+The below chart reflects a general targets between large and small batch delivery:
+
+|                    | Large Batch | Mediocre | Decent | Small Batch |
+|:------------------:|-------------|----------|--------|-------------|
+| Average Cycle Time | Months      | Weeks    | Days   | Hours       |
+
+> Important: We recommend first taking a look at the cycle time for branches ->
+pull requests -> deployment into production through the DORA metrics instead of
+relying on work cycle time.
 
 ## Code Change Metrics
 
