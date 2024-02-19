@@ -11,24 +11,41 @@ configured to run a [GitProvider receiver][gitprovider].
 [dora]: https://dora.dev/
 [gitprovider]: https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/receiver/gitproviderreceiver
 
-## Branch & PR Age
+## Branch Count and Age
 
-Measures the lifespan and efficiency of code integration in repos. Both, `branch
-age` and `pull request` age are measured as a number of minutes, hours, or days.
-Note that these metrics should be ignored for a repo's long-lived branches, such
-as `main`.
+Engineering Defaults: [Trunk Based Development][tbd] and [Paired Programming][pp]
 
-Longer-lived branches introduce risk and maintenance overhead. As time advances,
-downstream branches diverge from their upstream counterparts. Thus,
-these branches are more likely to experience merge conflicts and introduce
-unexpected code changes.
+***Branch Count*** measures the number of branches that exist within a
+repository at a given point in time, less the default branch.
 
-Long-lived pull requests can result from overly large scope or complexity of
-changes. It can also indicate a need for or lack of pair programming.
+***Branch Age*** measures the time a branch has existed within a repository at a
+given point in time, less the default branch.
 
-Generally, branch and pull request age metrics should be minimized. This
-promotes small batch development by frequently creating branches, opening pull
-requests, and merging/closing them quickly.
+High branch counts and branch ages are forms of technical debt, introducing
+unnecessary risk through increased maintenance and cognitive overhead. High
+counts and ages may also signify:
+
+* The team is using GitFlow
+* The team is not paired programming
+* The team is not delivering in small batches
+* A high number of merge conflicts the team has to deal with regularly.
+
+Branch count and branch age should be reduced to a minimum based on team context
+and goals. These metrics have to be evaluated in context. For example, a large
+open source project may have a much higher default that is acceptable than a
+product team of eight engineers.
+
+The below chart shows targets towards the engineering defaults for branch count
+and branch age when taken in the context of an ideal product team:
+
+|                      | Risky | Mediocre | Better | Engineering Defaults |
+|:--------------------:|-------|----------|--------|----------------------|
+| Branch Count         | 20+   | 10 - 20  | 5 - 10 | < 5                  |
+| Branch Age (in days) | 10+   | 7 - 10   | 3 - 7  | < 3                  |
+
+> These metrics can be gathered automatically from GitHub and GitLab through the
+> [Liatrio OTEL Collector][lcol]. Check out the [Liatrio OTEL Demo Fork][demo]
+> to see this metric collection in action.
 
 ## Number of Unique Contributors
 
@@ -175,3 +192,8 @@ pace. A steady flow of merged PRs suggests a healthy, productive development
 process. The frequency and volume of merged PRs can also reflect on team
 collaboration and efficiency. A project with frequent merges likely has good
 communication and collaboration among contributors.
+
+[tbd]: ../../engineering-defaults.md#trunk-based-development
+[pp]: ../../engineering-defaults.md#paired-programming
+[demo]: https://github.com/liatrio/opentelemetry-demo/blob/main/docs/delivery.md
+[lcol]: https://github.com/liatrio/liatrio-otel-collector/
