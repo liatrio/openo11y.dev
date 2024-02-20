@@ -2,4 +2,4 @@
 
 ## Trunk Based Development
 
-## Paired Programming
+## Pair Programming

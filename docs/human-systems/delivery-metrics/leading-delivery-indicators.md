@@ -11,9 +11,9 @@ configured to run a [GitProvider receiver][gitprovider].
 [dora]: https://dora.dev/
 [gitprovider]: https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/receiver/gitproviderreceiver
 
-## Branch Count and Age
+## Branch Metrics
 
-Engineering Defaults: [Trunk Based Development][tbd] and [Paired Programming][pp]
+Engineering Defaults: [Trunk Based Development][tbd] and [Pair Programming][pp]
 
 ***Branch Count*** measures the number of branches that exist within a
 repository at a given point in time, less the default branch.
@@ -26,7 +26,7 @@ unnecessary risk through increased maintenance and cognitive overhead. High
 counts and ages may also signify:
 
 * The team is using GitFlow
-* The team is not paired programming
+* The team is not pair programming
 * The team is not delivering in small batches
 * A high number of merge conflicts the team has to deal with regularly.
 
@@ -43,6 +43,28 @@ and branch age when taken in the context of an ideal product team:
 | Branch Count         | 20+   | 10 - 20  | 5 - 10 | < 5                  |
 | Branch Age (in days) | 10+   | 7 - 10   | 3 - 7  | < 3                  |
 
+***Branch Lines Added*** measures the number of lines added to a downstream
+branch when compared to its upstream branch, typically main.
+
+***Branch Lines Deleted*** measures the number of lines deleted from a downstream
+branch when compared to its upstream branch, typically main.
+
+> Junior developers add code. Senior developers delete code.[^seniority]
+
+As a project develops, its code base is expected to grow. This is especially
+true for new features rather than bug fixes. Thus, these metrics will generally
+be net positive for new and developing code bases. However, a matured code base
+is more likely to have reusable segments of code and will support new features
+with fewer additional lines of code.
+
+The purpose of this metric is to measure how large a code base grows over time
+and in turn, the required amount of cognitive overhead required of developers.
+While a very positive net change is often normal, it is generally desirable for
+this metric to be low or even negative without losing functionality.
+
+When evaluating this metric, it is very important to rely on strong style
+standards that encourage line length limits.
+
 > These metrics can be gathered automatically from GitHub and GitLab through the
 > [Liatrio OTEL Collector][lcol]. Check out the [Liatrio OTEL Demo Fork][demo]
 > to see this metric collection in action.
@@ -58,7 +80,7 @@ the beginning to the current time.
 
 Interpreting this metric is very contextual. Measuring an OpenSource Library
 that is used within production code may require a different number of
-contributors than a one-off POC of an internal repository.
+contributors than a one-off proof-of-concept (POC) of an internal repository.
 
 The below chart takes a view based on a couple common scenarios.
 
@@ -185,6 +207,6 @@ collaboration and efficiency. A project with frequent merges likely has good
 communication and collaboration among contributors.
 
 [tbd]: ../../engineering-defaults.md#trunk-based-development
-[pp]: ../../engineering-defaults.md#paired-programming
+[pp]: ../../engineering-defaults.md#pair-programming
 [demo]: https://github.com/liatrio/opentelemetry-demo/blob/main/docs/delivery.md
 [lcol]: https://github.com/liatrio/liatrio-otel-collector/
