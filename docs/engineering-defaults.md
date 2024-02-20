@@ -1,5 +1,7 @@
 # Engineering Defaults
 
+## Pair Programming
+
 ## Trunk Based Development
 
-## Pair Programming
+## Small Batch Delivery

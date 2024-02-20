@@ -8,12 +8,10 @@ indicators of how teams are delivering software.
 Many of these metrics can be gathered using an OpenTelemetry collector
 configured to run a [GitProvider receiver][gitprovider].
 
-[dora]: https://dora.dev/
-[gitprovider]: https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/receiver/gitproviderreceiver
-
 ## Branch Metrics
 
-Engineering Defaults: [Trunk Based Development][tbd] and [Pair Programming][pp]
+Engineering Defaults: [Pair Programming][pp], [Small Batch Delivery][sbd], and
+[Trunk Based Development][tbd]
 
 ***Branch Count*** measures the number of branches that exist within a
 repository at a given point in time, less the default branch.
@@ -43,27 +41,29 @@ and branch age when taken in the context of an ideal product team:
 | Branch Count         | 20+   | 10 - 20  | 5 - 10 | < 5                  |
 | Branch Age (in days) | 10+   | 7 - 10   | 3 - 7  | < 3                  |
 
-***Branch Lines Added*** measures the number of lines added to a downstream
-branch when compared to its upstream branch, typically main.
+***Branch Ahead By Commit Count*** measures the number of commits a downstream
+branch is ahead of its upstream branch, typically the trunk. A high number of
+"commits ahead" may indicate a need for smaller batch delivery.
 
-***Branch Lines Deleted*** measures the number of lines deleted from a downstream
-branch when compared to its upstream branch, typically main.
+***Branch Behind By Commit Count*** measures the number of commits a downstream
+branch is behind its upstream branch, typically the trunk. A high number of
+"commits behind" may indicate the branch has lived too long, adding extra
+maintenance and cognitive overload.
+
+***Branch Lines Added*** measures the number of lines added to a downstream
+branch when compared to its upstream branch, typically the trunk.
+
+***Branch Lines Deleted*** measures the number of lines deleted from a
+downstream branch when compared to its upstream branch, typically the trunk.
 
 > Junior developers add code. Senior developers delete code.[^seniority]
 
-As a project develops, its code base is expected to grow. This is especially
-true for new features rather than bug fixes. Thus, these metrics will generally
-be net positive for new and developing code bases. However, a matured code base
-is more likely to have reusable segments of code and will support new features
-with fewer additional lines of code.
-
-The purpose of this metric is to measure how large a code base grows over time
-and in turn, the required amount of cognitive overhead required of developers.
-While a very positive net change is often normal, it is generally desirable for
-this metric to be low or even negative without losing functionality.
-
-When evaluating this metric, it is very important to rely on strong style
-standards that encourage line length limits.
+The purpose of these metrics is to simply provide observable data points with
+regards to addition and deletion of code when comparing a branch to the default
+trunk. It is a purely contextual metric that a team can leverage to provide
+additional information during self-evaluation. This metric can be correlated
+with other metrics like Pull Request Age to provide additional insight on
+cognitive overheard.
 
 > These metrics can be gathered automatically from GitHub and GitLab through the
 > [Liatrio OTEL Collector][lcol]. Check out the [Liatrio OTEL Demo Fork][demo]
@@ -71,12 +71,12 @@ standards that encourage line length limits.
 
 ## Number of Unique Contributors
 
-Measures the total count of unique contributors to a repository over the course
-of its lifetime. An easy way to get this in GitHub or GitLab is to leverage the
-GitProvider receiver within the OpenTelemetry collector. It will count the
-cumulative number of unique contributors who have made at least one commit to a
-given repository. This count is a point-in-time count of all contributors from
-the beginning to the current time.
+***Unique Contributors*** measures the total count of unique contributors to a
+repository over the course of its lifetime. An easy way to get this in GitHub or
+GitLab is to leverage the GitProvider receiver within the OpenTelemetry
+collector. It will count the cumulative number of unique contributors who have
+made at least one commit to a given repository. This count is a point-in-time
+count of all contributors from the beginning to the current time.
 
 Interpreting this metric is very contextual. Measuring an OpenSource Library
 that is used within production code may require a different number of
@@ -97,26 +97,46 @@ The below chart takes a view based on a couple common scenarios.
 
 ## Code Coverage
 
-Measures the percentage of code statements exercised during unit test runs.
-Assesses the amount of code logic invoked during unit testing. 3rd party tooling
-such as [CodeCov][codecov], which runs in your automated CI/CD builds. If the
-code we're testing has 100 lines of code and 50 of those are executed by unit
-test code, then the code coverage percentage of this software is 50%.
+***Code Coverage*** measures the percentage of code statements exercised during
+unit test runs. Assesses the amount of code logic invoked during unit testing.
+Third party tooling such as [CodeCov][codecov] runs in your automated CI/CD
+pipelines. If the code in question has 100 lines of code and 50 of those are
+executed by unit tests, then the code coverage percentage of this software is
+50%.
 
 [codecov]: https://app.codecov.io/gh/open-telemetry/opentelemetry-collector-contrib
 
-We recommend having code coverage for any product which is going to production.
+Open O11y recommends having code coverage for any product which is going to
+production.
 
 ## Code Quality
 
-Measures the quality of code across three tenets: Security (Vulnerabilities),
-Reliability (Bugs), and Maintainability (Code Smells). Using 3rd party tooling
-like Coverity, etc. which runs in your automated CI/CD builds. One aspect of
-code quality is reusability, which can be measured by counting the number of
-interdependencies. The more tightly-coupled the code is with surrounding code
-and dependencies, the less reusable the code tends to be.
+***Code Quality*** measures the quality of code across three tenets:
+
+Security (Vulnerabilities): Security in the context of code quality refers to
+the identification and mitigation of vulnerabilities that could be exploited by
+attackers to compromise the system.
+
+Reliability (Bugs): Reliability focuses on the software's ability to perform its
+intended functions under specified conditions for a designated period. Bugs, or
+errors in the code, can significantly impact the reliability of a software
+application, leading to system crashes, incorrect outputs, or performance
+issues.
+
+Maintainability (Code Smells): Maintainability is about how easily software can
+be understood, corrected, adapted, and enhanced. "Code smells" are indicators of
+potential problems in the code that may hinder maintainability. These can
+include issues like duplicated code, overly complex methods, or classes with too
+many responsibilities. Addressing code smells through refactoring and adhering
+to coding standards and best practices helps improve the maintainability of the
+codebase, making it easier for developers to work with and evolve the software
+over time.
+
+Use third party tooling such as Coverity that provide these metrics.
 
 ## Work Cycle Time
+
+Engineering Defaults: [Small Batch Delivery][sbd]
 
 Work cycle time calculates the time between a work item being started and
 finished. For each work item, calculate the cycle time as:
@@ -156,20 +176,36 @@ Team Retrospective Questions:
 * Are work items blocked regularly?
 * Do work items need to be split into smaller scope portions?
 
-The below chart reflects a general targets between large and small batch delivery:
+The below chart reflects a general targets between large and small batch
+delivery:
 
 |                    | Large Batch | Mediocre | Decent | Small Batch |
 |:------------------:|-------------|----------|--------|-------------|
 | Average Cycle Time | Months      | Weeks    | Days   | Hours       |
 
 > Important: We recommend first taking a look at the cycle time for branches ->
-pull requests -> deployment into production through the DORA metrics instead of
-relying on work cycle time.
+> pull requests -> deployment into production through the DORA metrics instead
+> of relying on work cycle time.
 
+## Repositories Count
+
+The quantity of repositories managed by an organization or team is a critical
+indicator of the extent of code they oversee. This metric is the base for all
+other Source Control Management (SCM) metrics. High numbers of repositories for
+a small team may signify a high cognitive overhead. You can correlate the number
+of repositories a team owns to the number of repositories within the
+organization.
+
+However, it's crucial to recognize that this metric does not offer a
+one-size-fits-all solution. Although it forms the basis for further analysis,
+its significance can vary greatly. Like all metrics, it should be interpreted
+within the broader context and aligned with the specific values and objectives
+of the team.
 
 ## Pull Request Count and Age
 
-Engineering Defaults: [Trunk Based Development][tbd] and [Pair Programming][pp]
+Engineering Defaults: [Pair Programming][pp], [Small Batch Delivery][sbd], and
+[Trunk Based Development][tbd]
 
 ***Pull Request Count*** measures the number of pull requests against the
 default branch in a repository at a given point in time.
@@ -177,9 +213,31 @@ default branch in a repository at a given point in time.
 ***Pull Request Age*** measures the time from when a pull request is opened to
 when it is approved and merged.
 
-These metrics help teams discover bottlenecks that may block the merging of pull
-requests. A steady flow of merged PRs suggests a healthy, productive development
-process.
+These metrics help teams discover bottlenecks in the lifecycle of pull requests.
+There are three main states of a pull request that can be measured, `open`,
+`approved`, `merged`. The ideal situation for a team is that there is a steady
+flow of pull requests which suggests a healthy, productive development process,
+with low lead times from `open` to `merged`
+
+The below is the definition of states as defined in the
+[Git Provider Receiver][gitprovider] in terms of states for age:
+
+* ***open age***: the time of time a pull request has been open
+* ***approved age***: the amount of time it took for a pull request to go from
+  open to approved
+* ***merged age***: the amount of time it took for a pull request to go from
+  open to merged
+
+The below chart outlines time for each of these metric states centered towards
+the engineering defaults. Remember to evaluate these in context of things like
+team size, contributor size, and inner vs open source.
+
+|                             | Risky | Mediocre | Better | Engineering Defaults |
+|:---------------------------:|-------|----------|--------|----------------------|
+| Pull Request Count          | 20+   | 10 - 20  | 5 - 10 | < 5                  |
+| Pull Request Age - Open     | Weeks | Days     | Hours  | Minutes              |
+| Pull Request Age - Approved | Weeks | Days     | Hours  | Minutes              |
+| Pull Request Age - Merged   | Weeks | Days     | Hours  | Minutes              |
 
 Team Retrospective Questions:
 
@@ -204,7 +262,10 @@ code changes.
 
 [^seniority]: Unknown source
 
-[tbd]: ../../engineering-defaults.md#trunk-based-development
 [pp]: ../../engineering-defaults.md#pair-programming
+[tbd]: ../../engineering-defaults.md#trunk-based-development
+[sbd]: ../../engineering-defaults.md#small–batch-delivery
 [demo]: https://github.com/liatrio/opentelemetry-demo/blob/main/docs/delivery.md
 [lcol]: https://github.com/liatrio/liatrio-otel-collector/
+[dora]: https://dora.dev/
+[gitprovider]: https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/receiver/gitproviderreceiver
