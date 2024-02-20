@@ -195,7 +195,7 @@ Thus, the pairing partner is very familiar with the changes and is able to very
 quickly review and approve a pull request.
 
 Large batch deliveries increase the the time needed to review a pull request.
-This problem is discussed in detail [above](#branch-count-and-age).
+This problem is discussed in detail [above](#branch-metrics).
 
 Teams should also be concerned when these metrics are very low. This likely
 indicates that teams aren't reviewing pull requests effectively. Additionally,
