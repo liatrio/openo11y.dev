@@ -166,45 +166,43 @@ The below chart reflects a general targets between large and small batch deliver
 pull requests -> deployment into production through the DORA metrics instead of
 relying on work cycle time.
 
-## Code Change Metrics
 
-Measures code line changes for additions and deletions. Analyzing lines added
-and removed in merge requests offers more than just numerical data; it reveals
-critical insights into team productivity, codebase maturity, and the balance
-between feature development and maintenance.
+## Pull Request Count and Age
 
-## Repositories in Organization
+Engineering Defaults: [Trunk Based Development][tbd] and [Pair Programming][pp]
 
-Measuring the point-in-time number of repositories across the organization
-illuminates growth trends, which can signal increased team efficiency,
-exploration of new technologies, or expanded R&D efforts. Conversely, a high
-count may also indicate the presence of legacy projects that could be pruned to
-reduce cognitive overhead.
+***Pull Request Count*** measures the number of pull requests against the
+default branch in a repository at a given point in time.
 
-## PR Approval Time
+***Pull Request Age*** measures the time from when a pull request is opened to
+when it is approved and merged.
 
-Measures the amount of time it took a pull request to go from open to approved.
-This metric can highlight a PR's potential complexity to review. An overly
-complex PR may indicate someone working in a silo, or something that may have
-mixed content which would be better served with smaller, easier to review pull request.
+These metrics help teams discover bottlenecks that may block the merging of pull
+requests. A steady flow of merged PRs suggests a healthy, productive development
+process.
 
-## Point-in-Time Repository Metrics
+Team Retrospective Questions:
 
-Other metrics we find useful to gather across a repository include the number of
-open pull requests, and number of merged for any given repository.
+* Are pull requests simply being ignore?
+* Is the team overwhelmed with external contributions?
+* Are the merge requirements excessively difficult? Can automation help?
+* Are team members pair programming enough?
+* Is the team delivering in large batches?
 
-A high number of open PRs can indicate active development and engagement within
-the project. It can suggest that many features or fixes are in the pipeline,
-awaiting review or completion. Conversely, a consistently high number of open
-PRs might point to bottlenecks in the review process. It could signal that the
-team is overwhelmed, reviews are taking too long, or there's a lack of consensus
-on how to proceed.
+Pair programming can reduce the time needed towards reviewing pull requests.
+When pairing, a code review effectively occurs in real-time during development.
+Thus, the pairing partner is very familiar with the changes and is able to very
+quickly review and approve a pull request.
 
-The number of merged PRs is a direct indicator of the project's development
-pace. A steady flow of merged PRs suggests a healthy, productive development
-process. The frequency and volume of merged PRs can also reflect on team
-collaboration and efficiency. A project with frequent merges likely has good
-communication and collaboration among contributors.
+Large batch deliveries increase the the time needed to review a pull request.
+This problem is discussed in detail [above](#branch-count-and-age).
+
+Teams should also be concerned when these metrics are very low. This likely
+indicates that teams aren't reviewing pull requests effectively. Additionally,
+merging pull requests too quickly prevents other team members from reviewing the
+code changes.
+
+[^seniority]: Unknown source
 
 [tbd]: ../../engineering-defaults.md#trunk-based-development
 [pp]: ../../engineering-defaults.md#pair-programming
