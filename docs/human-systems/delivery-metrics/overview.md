@@ -1,6 +1,14 @@
+# Delivery Metrics
 
-# Engineering Effectiveness and Delivery Metrics
+Development, QA, Operations, Platform, SRE, Architecture, and every other group
+that interacts with a git repository. These teams all participate in delivery.
+The following pages describe various metrics that can be used to observe the
+effectiveness of delivery teams.
 
-Below defines the approach for measuring engineering teams. The measuring approach will be uniform across engineering delivery. There is no one single metric that rules them all. Focusing on one metric will cause overemphasis in one direction and will negatively impact the others. The outcome is not “big brother is watching” nor is it a way to measure individual performance. Rather, it is a mechanism to provide quantitative and qualitative [signals](https://github.com/cncf/tag-observability/blob/main/whitepaper.md#observability-signals) to product teams that measure their delivery, culture, and joy against an opinionated set of engineering practices and principles.
-
-Metrics will be gathered real-time or as near real-time as possible. Product delivery will not be impacted if the observability platform is unavailable.
+These metrics should be observed as a set; focusing on one metric inherently
+diminishes the value of others. Similarly, these metrics should not be the sole
+mechanism used for team self-evaluation. Instead, they are a mechanism to provide
+qualitative and quantitative
+[signals](https://github.com/cncf/tag-observability/blob/main/whitepaper.md#observability-signals)
+to teams that measure their delivery, culture, and joy against an opinionated
+set of engineering practices and principles.
