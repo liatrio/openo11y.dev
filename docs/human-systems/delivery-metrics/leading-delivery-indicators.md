@@ -26,12 +26,12 @@ counts and ages may also signify:
 * The team is using GitFlow
 * The team is not pair programming
 * The team is not delivering in small batches
-* A high number of merge conflicts the team has to deal with regularly.
+* A high number of merge conflicts that must be resolved regularly
 
 Branch count and branch age should be reduced to a minimum based on team context
 and goals. These metrics have to be evaluated in context. For example, a large
-open source project may have a much higher default that is acceptable than a
-product team of eight engineers.
+open source project may accept a much higher norm than a product team of eight
+engineers.
 
 The below chart shows targets towards the engineering defaults for branch count
 and branch age when taken in the context of an ideal product team:
@@ -72,17 +72,14 @@ cognitive overheard.
 ## Number of Unique Contributors
 
 ***Unique Contributors*** measures the total count of unique contributors to a
-repository over the course of its lifetime. An easy way to get this in GitHub or
-GitLab is to leverage the GitProvider receiver within the OpenTelemetry
-collector. It will count the cumulative number of unique contributors who have
-made at least one commit to a given repository. This count is a point-in-time
-count of all contributors from the beginning to the current time.
+repository over the course of its lifetime. This count will monotonically
+increase over time.
 
 Interpreting this metric is very contextual. Measuring an OpenSource Library
 that is used within production code may require a different number of
 contributors than a one-off proof-of-concept (POC) of an internal repository.
 
-The below chart takes a view based on a couple common scenarios.
+The below chart takes a view based on several common scenarios.
 
 |  Impact  | Risky  | Hesitant | Desirable |
 |:--------:|--------|----------|-----------|
@@ -215,14 +212,13 @@ when it is approved and merged.
 
 These metrics help teams discover bottlenecks in the lifecycle of pull requests.
 There are three main states of a pull request that can be measured, `open`,
-`approved`, `merged`. The ideal situation for a team is that there is a steady
-flow of pull requests which suggests a healthy, productive development process,
-with low lead times from `open` to `merged`
+`approved`, `merged`. Ideally, a team processes a steady flow of pull requests
+which suggests a healthy, productive development process.
 
 The below is the definition of states as defined in the
 [Git Provider Receiver][gitprovider] in terms of states for age:
 
-* ***open age***: the time of time a pull request has been open
+* ***open age***: the amount of time a pull request has been open
 * ***approved age***: the amount of time it took for a pull request to go from
   open to approved
 * ***merged age***: the amount of time it took for a pull request to go from
