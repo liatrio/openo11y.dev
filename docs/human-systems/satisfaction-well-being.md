@@ -9,9 +9,9 @@ the correlation of productivity and job satisfaction in the research piece on
 
 [space]: https://queue.acm.org/detail.cfm?id=3454124
 
-- **Team & Leadership Joy Index** - Benchmarks individual developer experience,
+- ***Team & Leadership Joy Index*** - Benchmarks individual developer experience,
   satisfaction, and happiness using NPS (Net Promoter Score) and surveys
-- **Open & Transparent Communication** - Assess how communication happens in
+- ***Open & Transparent Communication*** - Assess how communication happens in
   persistent chat platforms taking a look at total message count in public
   channels vs private and direct messages.
 
@@ -19,9 +19,9 @@ the correlation of productivity and job satisfaction in the research piece on
 
 Benchmarks individual developer experience, satisfaction, and happiness.
 
-___How to Measure:___ Employee Net Promoter Score (eNPS) tracks employee
+***How to Measure:*** Employee Net Promoter Score (eNPS) tracks employee
 engagement and measures the impact of their people and culture initiatives. The
 eNPS shows how workers feel about your organization.
 
-___Example:___ Question - “How likely are you to recommend us as a place to work
+***Example Question:*** “How likely are you to recommend us as a place to work
 for your family, friends, co-workers?”
