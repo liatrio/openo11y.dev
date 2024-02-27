@@ -1,6 +1,6 @@
 # Engineering Defaults
 
-Much of Open O11y's guidance is based on or enhanced by these best practices for
+Much of OpenO11y's guidance is based on or enhanced by these best practices for
 engineering teams.
 
 ## Pair Programming
