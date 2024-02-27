@@ -22,7 +22,7 @@ simultaneously in a single workspace.
 
 ## Small Batch Delivery
 
-Open O11y encourages teams to deliver in small batches. Planning small portions
+OpenO11y encourages teams to deliver in small batches. Delivering small portions
 of work enables teams to deploy, demo, and request feedback more frequently.
 Much like pair programming, this practice aids teams in coordinating their
 efforts and safeguards against individuals investing time and energy in
