@@ -62,8 +62,9 @@ site_url: https://openo11y.dev
 
 nav:
   - "Welcome to OpenO11y": "index.md"
-  - "Why Metrics Matter": "./why-metrics-matter.md"
   - "Guidance":
+      - "Why Metrics Matter": "./why-metrics-matter.md"
+      - "Engineering Defaults": "./engineering-defaults.md"
       - "Human Systems":
           - "Observing Human Systems": "./human-systems/observing-human-systems.md"
           - "Software Delivery Metrics":
