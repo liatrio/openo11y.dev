@@ -33,7 +33,7 @@ developing an incorrect solution.
 > A source-control branching model, where developers collaborate on code in a
 > single branch called 'trunk'[^trunksummary]
 
-Open O11y highly recommends using [Trunk Based Development][trunk] over other
+OpenO11y highly recommends using [Trunk Based Development][trunk] over other
 branching models. Its focus on simplicity offers many advantages:
 
 * The 'main' branch represents the application and is always production-ready
