@@ -4,6 +4,7 @@ theme:
   name: material
   custom_dir: docs/overrides
   logo: img/logo_o11y_black.png
+  favicon: img/favicon_o11y.svg
   icon:
     repo: fontawesome/brands/github
     edit: material/pencil
@@ -57,22 +58,23 @@ extra_css:
   - "styles/table.css"
 
 repo_url: https://github.com/liatrio/openo11y.dev
+site_url: https://openo11y.dev
 
 nav:
-  - "Welcome to Open O11y": "index.md"
+  - "Welcome to OpenO11y": "index.md"
   - "Why Metrics Matter": "./why-metrics-matter.md"
   - "Guidance":
-    - "Human Systems":
-        - "Observing Human Systems": "./human-systems/observing-human-systems.md"
-        - "Delivery Metrics":
-            - "Overview": "./human-systems/delivery-metrics/overview.md"
-            - "Lagging Inidicators": "./human-systems/delivery-metrics/lagging-delivery-indicators.md"
-            - "Leading Inidicators": "./human-systems/delivery-metrics/leading-delivery-indicators.md"
-            - "DevEx & Platform": "./human-systems/delivery-metrics/devex-platform.md"
-            - "Satisfaction & Well-Being": "./human-systems/delivery-metrics/satisfaction-well-being.md"
-    - "Business Systems": "./business-systems.md"
+      - "Human Systems":
+          - "Observing Human Systems": "./human-systems/observing-human-systems.md"
+          - "Software Delivery Metrics":
+              - "Overview": "./human-systems/delivery-metrics/overview.md"
+              - "Lagging Inidicators": "./human-systems/delivery-metrics/lagging-delivery-indicators.md"
+              - "Leading Inidicators": "./human-systems/delivery-metrics/leading-delivery-indicators.md"
+              - "DevEx & Platform": "./human-systems/delivery-metrics/devex-platform.md"
+          - "Satisfaction & Well-Being": "./human-systems/satisfaction-well-being.md"
+      - "Business Systems": "./business-systems.md"
   - "Demos":
-    - "Delivery Metrics Demo": "./delivery-demo.md"
+      - "Delivery Metrics Demo": "./delivery-demo.md"
   # - "O11y Quick Start Platform":
   #     - "Overview": "./platform/README.md"
   #     - "Architecture": "./platform/architecture.md"

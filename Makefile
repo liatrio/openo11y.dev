@@ -10,11 +10,11 @@ build: poetry-install
 	poetry run mkdocs build
 
 .PHONY: serve
-serve: 
+serve: poetry-install
 	poetry run mkdocs serve
 
-.PHONY: install-deps
-install-deps:
+.PHONY: brew
+brew:
 	brew bundle --force
 
 .PHONY: backstage
