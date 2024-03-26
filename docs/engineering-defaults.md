@@ -106,7 +106,10 @@ acceptance criteria should address them. This prevents teams from separating
 security needs from other work and denies the opportunity to delay the
 implementation of security requirements.
 
-While this list is not comprehensive, it is important that:
+Software security is far too large in scope to be covered by OpenO11y. NIST has
+several publications such as 800-53[^nist] that dive deep into information
+technology security. OpenO11y offers the following short list as a starting
+point for teams to follow.
 
 * Secrets are never stored in git repositories; Use a secrets
   management service
@@ -141,6 +144,7 @@ continuous testing is to minimize business risk and impact on users.​
 [^ci]: <https://www.cloudbees.com/continuous-delivery/continuous-integration>
 [^leastprivilege]: <https://en.wikipedia.org/wiki/Principle_of_least_privilege>
 [^trunksummary]: Trunk Based Development One Line Summary: <https://trunkbaseddevelopment.com/#one-line-summary>
+[^nist]: <https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final>
 
 [gitflow]: https://nvie.com/posts/a-successful-git-branching-model/
 [liveshare]: https://code.visualstudio.com/learn/collaboration/live-share
