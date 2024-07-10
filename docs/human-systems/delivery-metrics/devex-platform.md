@@ -16,5 +16,5 @@ These metrics serve to provide the overall experience for engineers at your orga
 - **Onboarding Experience** - Measure the overall onboarding time from gaining hardware to receiving the proper access to be productive. How does your organization's onboarding experience compare to other organizations?
 - **Mean Time to First Commit In Production** - Calculate the delta between new hire start date to the timestamp of the first commit deployed to Production.
 - **Time In Context/Flow** - Measure the amount of time spent doing development work vs in meetings & ceremonies
--**Discoverability of Quality Documentation** - How easy is it to find materials you need to do your job.
-Use of Well-Known, “Googleable” Technologies - Using well-known or open source technologies over home-grown, bespoke solutions with high learning curves
+- **Discoverability of Quality Documentation** - How easy is it to find materials you need to do your job.
+- **Use of Well-Known, “Googleable” Technologies** - Using well-known or open source technologies over home-grown, bespoke solutions with high learning curves
