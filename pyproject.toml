@@ -13,7 +13,7 @@ readme = "README.md"
 python = "^3.11"
 mkdocs = "^1.5.2"
 mkdocs-material = "^9.1.21"
-watchdog = "~4.0.0"
+watchdog = "~5.0.0"
 
 
 [build-system]
