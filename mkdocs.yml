@@ -40,17 +40,17 @@ extra_javascript:
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
-  #  - pymdownx.superfences:
-  #     custom_fences:
-  #      - name: mermaid
-  #       class: mermaid
-  #      format: !!python/name:pymdownx.superfences.fence_code_format
-  #   - name: math
-  #    class: arithmatex
-  #   format:
-  #    !!python/object/apply:pymdownx.arithmatex.arithmatex_fenced_format {
-  #     which: generic,
-  #  }
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+        - name: math
+          class: arithmatex
+          format:
+            !!python/object/apply:pymdownx.arithmatex.arithmatex_fenced_format
+            which: generic
+
   - footnotes
 
 extra_css:
