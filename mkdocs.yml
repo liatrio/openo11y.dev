@@ -48,8 +48,9 @@ markdown_extensions:
         - name: math
           class: arithmatex
           format:
-            !!python/object/apply:pymdownx.arithmatex.arithmatex_fenced_format
-            which: generic
+            !!python/object/apply:pymdownx.arithmatex.arithmatex_fenced_format {
+              which: generic,
+            }
 
   - footnotes
 
