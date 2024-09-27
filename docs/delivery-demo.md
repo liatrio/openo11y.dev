@@ -2,40 +2,33 @@
 
 ## Introduction
 
-Welcome to the Delivery Metrics demo page! This demo is a fork of the
-[OpenTelemetry Demo][oteldemo] leveraging the [Liatrio OTEL Collector][lotelcol]
-distribution in an additional profile to provide the following additional
-capabilities:
+Welcome to the Delivery Metrics demo page! This demo will use [tag-o11y-quickstart-manifests][quickstart] to spin 
+quickly spin up a delivery demo leveraging the [Liatrio OTEL Collector][lotelcol] distribution in an additional profile to provide the following additional capabilities:
 
-* Leading delivery indicators from GitHub using the Git Provider Receiver
+* Leading delivery indicators from GitHub using the Git Hub Receiver
 * DORA Metrics from GitHub through the WebHook Event Receiver
 
-At this point in time, the demo fork is only extended to work locally via
-Docker.
 
 ## Getting Started
 
 ### Prerequisites
-
-* The same set of prerequisites defined for the [OpenTelemetry Demo][oteldemoreqs]
-* Clone the [Liatrio OpenTelemetry Demo][loteldemo] using git
-* Any prerequisites defined in the [Delivery Demo Documentation][loteldemoreqs]
+* Clone the [tag-o11y-quickstart-manifests][quickstart] using git
+* A local kubernetes cluster
+* Any prerequisites listen in the [tag-o11y-quickstart-manifests][quickstart] docs
 
 ### General Commands
 
-Once those docs are reviewed and prerequisites met run either (or both):
+Once those docs are reviewed and prerequisites met run:
 
-* `make start-delivery`
-* `make start-dora`
+* `make ghr`
 
 If setup via the guide in the demo, then you should start to see metrics like
 the below screenshots by navigating to Grafana:
 
 * Grafana: <http://localhost:8080/grafana/>
 
-![Delivery Metrics Dashboard](img/delivery-metrics-dashboard-1.png "Delivery Metrics Dashboard")
-![Delivery Metrics Dashboard](img/delivery-metrics-dashboard-2.png "Delivery Metrics Dashboard")
 
+[quickstart]: https://github.com/liatrio/tag-o11y-quick-start-manifests
 [lotelcol]: https://github.com/liatrio/liatrio-otel-collector
 [loteldemo]: https://github.com/liatrio/opentelemetry-demo
 [loteldemoreqs]: https://github.com/liatrio/opentelemetry-demo/blob/main/docs/delivery.md#pre-requisites
