@@ -6,7 +6,7 @@ the engineering practices and principals. Complimentary to the
 indicators of how teams are delivering software.
 
 Many of these metrics can be gathered using an OpenTelemetry collector
-configured to run a [GitProvider receiver][gitprovider].
+configured to run a [GitHub receiver][github].
 
 ## Branch Metrics
 
@@ -216,7 +216,7 @@ There are three main states of a pull request that can be measured, `open`,
 which suggests a healthy, productive development process.
 
 The below is the definition of states as defined in the
-[Git Provider Receiver][gitprovider] in terms of states for age:
+[GitHub Receiver][github] in terms of states for age:
 
 * ***open age***: the amount of time a pull request has been open
 * ***approved age***: the amount of time it took for a pull request to go from
@@ -264,4 +264,4 @@ code changes.
 [demo]: https://github.com/liatrio/opentelemetry-demo/blob/main/docs/delivery.md
 [lcol]: https://github.com/liatrio/liatrio-otel-collector/
 [dora]: https://dora.dev/
-[gitprovider]: https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/receiver/gitproviderreceiver
+[github]: https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/receiver/githubreceiver
