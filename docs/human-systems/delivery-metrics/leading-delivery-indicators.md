@@ -216,7 +216,7 @@ There are three main states of a pull request that can be measured, `open`,
 which suggests a healthy, productive development process.
 
 The below is the definition of states as defined in the
-[Git Hub Receiver][github] in terms of states for age:
+[GitHub Receiver][github] in terms of states for age:
 
 * ***open age***: the amount of time a pull request has been open
 * ***approved age***: the amount of time it took for a pull request to go from
