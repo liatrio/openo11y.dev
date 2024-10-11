@@ -6,7 +6,7 @@ the engineering practices and principals. Complimentary to the
 indicators of how teams are delivering software.
 
 Many of these metrics can be gathered using an OpenTelemetry collector
-configured to run a [Git Hub receiver][github].
+configured to run a [GitHub receiver][github].
 
 ## Branch Metrics
 
