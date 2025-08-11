@@ -18,7 +18,7 @@ jobs:
       mkdocs-present: ${{ steps.check-mkdocs.outputs.mkdocs-exists }}
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
 
     - name: Check if catalog exists
       id: check-catalog
@@ -61,7 +61,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Cache Node.js modules
         uses: actions/cache@v4
