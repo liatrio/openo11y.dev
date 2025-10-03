@@ -16,13 +16,13 @@ jobs:
             deployments: write
         steps:
             - name: checkout code
-              uses: actions/checkout@v4
+              uses: actions/checkout@v5
               with:
                   fetch-depth: 0
             - name: setup python
-              uses: actions/setup-python@v5
+              uses: actions/setup-python@v6
               with:
-                python-version: '3.11'
+                python-version: '3.13'
             - name: setup poetry
               uses: Gr1N/setup-poetry@v9
 
@@ -32,7 +32,7 @@ jobs:
 
             - name: upload pages artifact
               if: ${{ github.ref == 'refs/heads/main' }}
-              uses: actions/upload-pages-artifact@v3
+              uses: actions/upload-pages-artifact@v4
               with:
                 path: site/
 
